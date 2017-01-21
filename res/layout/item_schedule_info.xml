@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/common_list_padding" >
+
+    <ImageView
+        android:id="@+id/arrow"
+        style="@style/wrap_All"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/right" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/arrow"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/wrap_All"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/content_font_size_big"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/wrap_All"
+            android:layout_below="@id/title"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/content_font_size"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/wrap_All"
+            android:layout_below="@id/title"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/name"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/content_font_size"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+</RelativeLayout>

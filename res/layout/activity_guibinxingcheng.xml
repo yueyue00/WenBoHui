@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout style="@style/fill_All" >
+    <View 
+        android:id="@+id/view_line_white"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ffffff"/>
+    <!-- SwipeRefreshLayout  下面只能包含一个view -->
+       <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_guibinxingcheng"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_below="@id/view_line_white"
+            >
+
+           
+           <!--  <com.gheng.exhibit.widget.PinnedHeaderExpandableListView
+                android:id="@+id/lv"
+                style="@style/fill_All"
+                android:background="@color/beijing"
+                android:childDivider="@null"
+                android:childIndicator="@null"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:groupIndicator="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" 
+                android:visibility="gone"/>  -->
+       
+        
+     <com.iadiae.acquaintancehelp.view.stickylistheaders.StickyListHeadersListView 
+        android:id="@+id/xcap_stickyHeaderview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        >
+        
+    </com.iadiae.acquaintancehelp.view.stickylistheaders.StickyListHeadersListView>
+   </android.support.v4.widget.SwipeRefreshLayout> 
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/content_font_size_big"
+            android:typeface="sans" 
+            android:textColor="@color/xiaoguo_title2_bg"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

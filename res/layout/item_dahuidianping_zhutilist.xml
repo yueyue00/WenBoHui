@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/uploaduserphoto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a_huiyiricheng_guesticon" />
+
+    <TextView
+        android:id="@+id/uploadusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/uploaduserphoto"
+        android:lines="1"
+        android:text="loading"
+        android:textColor="@color/blue"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/passedbg"
+        android:gravity="center"
+        android:lines="1"
+        android:text="已发布"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/uploadtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/uploaduserphoto"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/uploaduserphoto"
+        android:lines="1"
+        android:text="2010-01-01 10:10:10"
+        android:textColor="#686868"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/commentsright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/uploadtime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/nocommentslogo"
+        android:drawablePadding="5dp"
+        android:lines="1"
+        android:text="5"
+        android:textColor="#686868"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploadtime"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="第二届世界世界互联网大会已收到全球近千名记者报名"
+        android:textColor="@color/dahuidianping_content"
+        android:textSize="16dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/photorv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" >
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/commentsdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photorv"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/nocommentslogo"
+        android:drawablePadding="5dp"
+        android:lines="1"
+        android:text="5"
+        android:textColor="#686868"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/kongbai"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/commentsdown"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/zhutipinglunfengexian"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/kongbai"
+        android:layout_marginTop="10dp"
+        android:background="#DCDCDC"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/quanbuhuiyingtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zhutipinglunfengexian"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="全部回应"
+        android:textColor="#1a1a1a"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

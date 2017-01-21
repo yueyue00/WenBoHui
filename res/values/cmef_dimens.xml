@@ -1,0 +1,18 @@
+<resources>
+
+    <dimen name="schedule_intro">45dp</dimen>
+    <dimen name="schedule_intro_logo">20dp</dimen>
+    <dimen name="schedule_intro_margin">3dp</dimen>
+    <dimen name="schedule_list_icon">20dp</dimen>
+    <dimen name="icon_zan">25dp</dimen>
+    <dimen name="baoming_line_height">40dp</dimen>
+    <dimen name="mine_margin_top">5dp</dimen>
+    <dimen name="schedule_list_tilte_space">10dp</dimen>
+    <dimen name="fav_icon">30dp</dimen>
+    <dimen name="submit_margin">10dp</dimen>
+    <dimen name="detail_icon_fav">20dp</dimen>
+    <dimen name="switch_max_height">30dp</dimen>
+    <dimen name="main_bottom_height">50dp</dimen>
+    <dimen name="main_hand_height">30dp</dimen>
+
+</resources>

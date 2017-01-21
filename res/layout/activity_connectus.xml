@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_title" >
+
+        <ImageButton
+            android:id="@+id/goback"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/wuzhen_back" />
+
+        <TextView
+            android:id="@+id/titletv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="联系我们"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlelayout"
+        android:fadeScrollbars="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/heikuangkuang"
+                android:gravity="center"
+                android:text="太极智旅信息技术有限公司"
+                android:textColor="#1a1a1a"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/dianhuatv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/company"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="- 电话 -"
+                android:textColor="#1a1a1a"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:id="@+id/dianhualayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/dianhuatv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/dianhua1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="010－51616888"
+                    android:textColor="#686868"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/dianhuaxian"
+                    android:layout_width="1dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/dianhua1"
+                    android:background="#1a1a1a" />
+
+                <TextView
+                    android:id="@+id/dianhua2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/dianhuaxian"
+                    android:gravity="center"
+                    android:text="010－51616889"
+                    android:textColor="#686868"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/qqtv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/dianhualayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="- QQ -"
+                android:textColor="#1a1a1a"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:id="@+id/qqlayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/qqtv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/qq1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="1239268575"
+                    android:textColor="#686868"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/qqxian"
+                    android:layout_width="1dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/qq1"
+                    android:background="#1a1a1a" />
+
+                <TextView
+                    android:id="@+id/qq2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/qqxian"
+                    android:gravity="center"
+                    android:text="1650432983"
+                    android:textColor="#686868"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/emalitv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/qqlayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="- 邮箱 -"
+                android:textColor="#1a1a1a"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:id="@+id/emaillayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/emalitv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="taiji@mail.taiji.com.cn"
+                    android:textColor="#686868"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/nettv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/emaillayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="- 网址 -"
+                android:textColor="#1a1a1a"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:id="@+id/netlayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/nettv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/net"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="http://www.taiji.com.cn/index.htm"
+                    android:textColor="#686868"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/addresstv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/netlayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="- 地址 -"
+                android:textColor="#1a1a1a"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:id="@+id/addresslayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/addresstv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="北京市海淀区北四环中路211号"
+                    android:textColor="#686868"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

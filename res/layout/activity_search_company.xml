@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftImageSrc="@drawable/back"
+        titleBar:leftLineShow="false"
+        titleBar:text="@string/company_search"
+        titleBar:textSize="@dimen/title_font_size" >
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="@string/add"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </com.gheng.exhibit.widget.TitleBar>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/input_company_name"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <include
+        android:id="@+id/pull_refresh_list"
+        layout="@layout/pull_listview"
+        android:dividerHeight="4dp" />
+
+</LinearLayout>

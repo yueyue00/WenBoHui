@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SegmentedGroup">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="tint_color" format="color" />
+        <attr name="checked_text_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="TitleBar">
+        <attr name="leftImageSrc" format="reference" />
+        <attr name="leftLineColor" format="reference|color" />
+        <attr name="leftLineShow" format="boolean" />
+        <attr name="leftLineWidth" format="boolean" />
+        <attr name="rightImageSrc" format="reference" />
+        <attr name="rightLineColor" format="reference|color" />
+        <attr name="rightLineShow" format="boolean" />
+        <attr name="rightLineWidth" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="dimension" />
+        <attr name="text" format="reference|string" />
+        <attr name="rightText" format="reference|string" />
+        <attr name="hint" format="reference|string" />
+        <attr name="imageSize" format="dimension" />
+        <attr name="bottomLineShow" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="TabPager">
+        <attr name="lineColor" format="reference|color" />
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="lineHeight" format="dimension" />
+        <attr name="textSelectColor" format="reference|color" />
+        <attr name="textUnSelectColor" format="reference|color" />
+        <attr name="texts" format="reference|string" />
+        <attr name="pageHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="TabLayout">
+        <attr name="dividerMargin" format="dimension" />
+        <attr name="dividerWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="SeekBarPressure">
+        <attr name="minValue" format="float" />
+        <attr name="maxValue" format="float" />
+        <attr name="duration" format="float" />
+        <attr name="width" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="zborder_width" format="dimension" />
+        <attr name="zborder_color" format="color" />
+        <attr name="zborder_overlay" format="boolean" />
+    </declare-styleable>
+    
+    <!-- stickylistheaders 属性 -->
+     <declare-styleable name="StickyListHeadersListView">
+        <!-- View attributes -->
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+        <attr name="android:transcriptMode" />
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+    
+</resources>

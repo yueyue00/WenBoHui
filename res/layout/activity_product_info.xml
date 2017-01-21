@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftImageSrc="@drawable/back"
+        titleBar:leftLineShow="false"
+        titleBar:rightImageSrc="@drawable/topbar_menu_pressed"
+        titleBar:textSize="@dimen/title_font_size" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible" />
+    </com.gheng.exhibit.widget.TitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/iv"
+                style="@style/ImageBorder"
+                android:layout_width="@dimen/company_info_logo_size"
+                android:layout_height="@dimen/company_info_logo_size"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/iv"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/wrap_All"
+                    android:text=""
+                    android:textColor="@color/main_schedule_font"
+                    android:textSize="@dimen/content_font_size_big"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    style="@style/wrap_All"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/main_schedule_font"
+                    android:textSize="@dimen/content_font_size"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    style="@style/width_wrap"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_exhibit_label"
+                        style="@style/wrap_All"
+                        android:text=""
+                        android:textColor="@color/company_stand"
+                        android:textSize="@dimen/content_font_size"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/tv_exhibit"
+                        style="@style/wrap_All"
+                        android:text=""
+                        android:textColor="@color/company_stand"
+                        android:textSize="@dimen/content_font_size"
+                        android:typeface="sans" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/wrap_width"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_comment_to"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            style="@style/CompanyInfoIcon"
+                            android:scaleType="center"
+                            android:src="@drawable/schedule_comment" />
+
+                        <TextView
+                            android:id="@+id/tv_comment"
+                            style="@style/CompanyInfoText"
+                            android:typeface="sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_fav"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/iv_fav"
+                            style="@style/CompanyInfoIcon"
+                            android:src="@drawable/fav" />
+
+                        <TextView
+                            android:id="@+id/tv_fav"
+                            style="@style/CompanyInfoText"
+                            android:typeface="sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_location"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            style="@style/CompanyInfoIcon"
+                            android:src="@drawable/maplocation" />
+
+                        <TextView
+                            android:id="@+id/tv_loaction"
+                            style="@style/CompanyInfoText"
+                            android:typeface="sans" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/agray" />
+
+        <com.gheng.exhibit.widget.TabPager
+            xmlns:tabPager="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tabPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tabPager:tabTextSize="@dimen/content_font_size" />
+    </LinearLayout>
+
+</LinearLayout>

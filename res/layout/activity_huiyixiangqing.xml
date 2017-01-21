@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/titlelayout"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:id="@+id/myscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlelayout"
+        android:background="@color/white"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/linear_iv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/huiyixiangqing_topiv"
+                android:background="@drawable/huiyixiangqing_top"
+                android:orientation="vertical"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/huiyixiangqing_top"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/hyxq_linear_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/hyxq_iv_tag"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/btn_meetingschedule_theme" />
+
+                        <View
+                            android:id="@+id/hyxq_view_line_1"
+                            android:layout_width="1dp"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="#bcbcbc" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/hyxq_tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hyxq_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/hyxq_linear_title"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#D4D4D4"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/hyxq_line_view_1"
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/hyxq_linear_title"
+                    android:layout_marginLeft="20dp"
+                    android:background="#bcbcbc" />
+
+                <LinearLayout
+                    android:id="@+id/hyxq_linear_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hyxq_view_1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/hyxq_tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/bg_meetingshedule_time"
+                        android:drawableLeft="@drawable/btn_meetingschedule_timewhite"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hyxq_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/hyxq_linear_time"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#D4D4D4"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/hyxq_linear_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hyxq_view_2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/btn_meetingschdule_address" />
+
+                        <View
+                            android:id="@+id/hyxq_view_line_2"
+                            android:layout_width="1dp"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:background="#bcbcbc" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/hyxq_tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text=""
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/location_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/location_icon"
+                        android:clickable="true" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hyxq_view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/hyxq_linear_location"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#D4D4D4"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/hyxq_line_view_2"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/hyxq_linear_location"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#bcbcbc" />
+
+                <LinearLayout
+                    android:id="@+id/hyxq_linear_host"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hyxq_view_3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/btn_meetingschedule_name" />
+
+                        <View
+                            android:id="@+id/hyxq_view_line_3"
+                            android:layout_width="1dp"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:background="#bcbcbc" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/hyxq_tv_host"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hyxq_view_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/hyxq_linear_host"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#D4D4D4"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/hyxq_line_view_3"
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/hyxq_linear_host"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#bcbcbc" />
+
+                <LinearLayout
+                    android:id="@+id/hyxq_linear_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hyxq_view_4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/btn_meetingschdule_introduce" />
+
+                        <View
+                            android:id="@+id/hyxq_view_line_4"
+                            android:layout_width="1dp"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:background="#bcbcbc" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/hyxq_tv_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/hyxq_view_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/hyxq_linear_introduce"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#D4D4D4"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_jiabin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/huiyixiangqing_jiabin"
+                android:layout_marginLeft="@dimen/huiyixiangqing_jiabin_left" >
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/beijing" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="@dimen/huiyixiangqing_item_left"
+                android:orientation="horizontal" >
+
+                <com.gheng.exhibit.widget.MyListView
+                    android:id="@+id/lv_yiti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:divider="@color/beijing"
+                    android:dividerHeight="1px"
+                    android:listSelector="#00000000"
+                    android:scrollbars="none" >
+                </com.gheng.exhibit.widget.MyListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

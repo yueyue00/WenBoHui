@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beijing"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/wuzhen_huiyiricheng_searchkuang"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/search_btn" />
+
+        <TextView
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint=""
+            android:singleLine="true"
+            android:textColor="@color/text_details"
+            android:textSize="14dp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <!--
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiobutton_riqi"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@drawable/radiobutton_textviewcolor"
+            android:typeface="sans" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_huichang"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/radiobutton_textviewcolor"
+            android:typeface="sans" />
+    </RadioGroup>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/relative_riqi"
+        style="@style/fill_All"
+        android:layout_marginTop="10dp" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_anriqi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!--
+                 <com.gheng.exhibit.widget.PinnedHeaderExpandableListView
+                android:id="@+id/lv"
+                style="@style/fill_All"
+                android:background="@color/white"
+                android:childDivider="@null"
+                android:childIndicator="@null"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:groupIndicator="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />            -->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/nodatafounddate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂无数据"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/relative_huichang"
+        style="@style/fill_All"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_anhuichang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            
+                 <com.gheng.exhibit.widget.PinnedHeaderExpandableHuiChangListView
+                android:id="@+id/lv_huicahng"
+                style="@style/fill_All"
+                android:background="@color/white"
+                android:childDivider="@null"
+                android:childIndicator="@null"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:groupIndicator="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />           
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv_huicahng"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/nodatafoundhuichang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:typeface="sans" />
+    </RelativeLayout>
+    -->
+
+</LinearLayout>

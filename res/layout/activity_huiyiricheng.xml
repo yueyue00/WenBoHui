@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:background="@color/xiaoguo_title2_bg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/wuzhen_huiyiricheng_searchkuang"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/search_btn" />
+
+        <TextView
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint=""
+            android:singleLine="true"
+            android:textColor="@color/text_details"
+            android:textSize="14sp"
+            android:typeface="sans" />
+    </LinearLayout>
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" 
+        android:background="@color/xiaoguo_title2_bg"
+        android:layout_marginBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radiobutton_riqi"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/vip_rb_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@drawable/radiobutton_textviewcolor"
+            android:typeface="sans" />
+
+        <!-- <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            
+             /> -->
+
+        <RadioButton
+            android:id="@+id/radiobutton_huichang"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/vip_rb_right_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/radiobutton_textviewcolor"
+            android:typeface="sans" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/relative_riqi"
+        style="@style/fill_All"
+        android:layout_marginTop="10dp" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_anriqi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" > 
+
+            <!-- <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:visibility="visible"
+                >
+            </android.support.v7.widget.RecyclerView> -->
+            
+       <com.iadiae.acquaintancehelp.view.stickylistheaders.StickyListHeadersListView 
+        android:id="@+id/huiyi_riqi_stickyHeaderview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        
+        >
+        
+    </com.iadiae.acquaintancehelp.view.stickylistheaders.StickyListHeadersListView>
+            
+
+     </android.support.v4.widget.SwipeRefreshLayout>
+ 
+        
+            <TextView
+                android:id="@+id/nodatafounddate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂无数据"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_huichang"
+        style="@style/fill_All"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_anhuichang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" > 
+
+           <!--  <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv_huicahng"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:visibility="visible"
+                >
+            </android.support.v7.widget.RecyclerView> -->
+        <com.iadiae.acquaintancehelp.view.stickylistheaders.StickyListHeadersListView 
+        android:id="@+id/huiyi_huichang_stickyHeaderview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        
+        >
+        
+    </com.iadiae.acquaintancehelp.view.stickylistheaders.StickyListHeadersListView>
+       </android.support.v4.widget.SwipeRefreshLayout> 
+
+        <TextView
+            android:id="@+id/nodatafoundhuichang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+</LinearLayout>

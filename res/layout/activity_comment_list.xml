@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftImageSrc="@drawable/back"
+        titleBar:rightImageSrc="@drawable/home"
+        titleBar:leftLineShow="false"
+        titleBar:textSize="@dimen/title_font_size" >
+    </com.gheng.exhibit.widget.TitleBar>
+    
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="10dp"
+    	android:gravity="center"
+    	 >
+    	  <TextView
+	          android:id="@+id/tv_name"
+	          style="@style/wrap_All"
+	          android:text=""
+	          android:textColor="@color/main_schedule_font"
+	          android:textSize="@dimen/content_font_size_big" />
+    </LinearLayout>
+  
+ 	<View
+		    android:layout_width="match_parent"
+		    android:layout_height="10dp" 
+		    android:background="@color/agray"/>
+    <include
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1000"
+        layout="@layout/pull_listview" />
+
+    <include layout="@layout/comment_bar_layout" />
+
+</LinearLayout>

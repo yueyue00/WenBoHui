@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftImageSrc="@drawable/back"
+        titleBar:leftLineShow="false"
+        titleBar:rightImageSrc="@drawable/home"
+        titleBar:textSize="@dimen/title_font_size" >
+    </com.gheng.exhibit.widget.TitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="5dp" >
+
+                <com.gheng.exhibit.widget.RoundImageView
+                    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv"
+                    android:layout_width="@dimen/company_info_logo_size"
+                    android:layout_height="@dimen/company_info_logo_size"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_launcher"
+                    imagecontrol:border_inside_color="@color/btn_gray"
+                    imagecontrol:border_thickness="3dp" />
+                <!-- imagecontrol:border_outside_color="#ba3456" -->
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/wrap_All"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/content_font_size_big" />
+
+                    <TextView
+                        android:id="@+id/tv_office"
+                        style="@style/wrap_All"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textSize="@dimen/content_font_size_big" />
+
+                    <TextView
+                        android:id="@+id/tv_workplace"
+                        style="@style/wrap_All"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/main_icon_font"
+                        android:textSize="@dimen/content_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/v_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ll"
+                    android:layout_margin="5dp"
+                    android:background="@color/btn_gray" />
+
+                <TextView
+                    android:id="@+id/tv_background"
+                    style="@style/wrap_All"
+                    android:layout_below="@id/v_line"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text=""
+                    android:textSize="@dimen/content_font_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_bar_line" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                layout="@layout/view_bar_line" />
+
+            <TextView
+                android:id="@+id/tv_ralation_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColor="@color/common_red_font"
+                android:textSize="@dimen/content_font_size_big_2" />
+
+            <include layout="@layout/view_bar_line" />
+
+            <include
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/listview_custom"
+                android:background="@color/white" />
+
+            <include layout="@layout/view_bar_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

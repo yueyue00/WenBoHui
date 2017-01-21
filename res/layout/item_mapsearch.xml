@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:paddingBottom="@dimen/common_list_padding"
+    android:paddingTop="@dimen/common_list_padding" >
+
+    <ImageView
+        android:id="@+id/arrow"
+        style="@style/wrap_All"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/right" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@id/arrow"
+        android:layout_toRightOf="@id/iv" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/wrap_All"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/content_font_size_big"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            style="@style/wrap_All"
+            android:layout_below="@id/tv_name"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_exhibit"
+                style="@style/wrap_All"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/content_font_size"
+                android:typeface="sans" />
+
+            <TextView
+                style="@style/wrap_All"
+                android:text=":"
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/content_font_size"
+                android:typeface="sans"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_exhibit_number"
+                style="@style/wrap_All"
+                android:text=""
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/content_font_size"
+                android:typeface="sans"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

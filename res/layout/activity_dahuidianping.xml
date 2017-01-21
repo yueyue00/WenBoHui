@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/titlelayout"
+        layout="@layout/title" />
+
+    <!-- <RelativeLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_title"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/goback"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/wuzhen_back" />
+
+        <TextView
+            android:id="@+id/titletv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="大会点评"
+            android:textColor="@android:color/white"
+            android:textSize="19dp"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/wodelogo"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/wodelogo"
+            android:visibility="gone" />
+    </RelativeLayout> -->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/downlayout"
+        android:layout_below="@+id/titlelayout" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/downlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/fabuzhutilayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/beijing" >
+
+            <RelativeLayout
+                android:id="@+id/fabuzhutismalllayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/xiepinglunbg" >
+
+                <ImageView
+                    android:id="@+id/xiepinglunlogo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/xiepinglunlogo" />
+
+                <TextView
+                    android:id="@+id/fazhutitv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/xiepinglunlogo"
+                    android:gravity="center"
+                    android:text="发表话题"
+                    android:textColor="#686868"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fapinglunlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/beijing"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/sendbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="send"
+                android:textColor="@color/blue"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/fapinglunsmalllayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toLeftOf="@+id/sendbutton"
+                android:background="@drawable/xiepinglunbg" >
+
+                <ImageView
+                    android:id="@+id/fapinglunlogo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/xiepinglunlogo" />
+
+                <EditText
+                    android:id="@+id/fapingluned"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/fapinglunlogo"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:hint="发表评论"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#DCDCDC"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

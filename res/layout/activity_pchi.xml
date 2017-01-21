@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftImageSrc="@drawable/back"
+        titleBar:leftLineShow="false"
+        titleBar:text=""
+        titleBar:textSize="@dimen/title_font_size" >
+    </com.gheng.exhibit.widget.TitleBar>
+
+    <ScrollView
+        style="@style/fill_All"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/fill_All"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv"
+                style="@style/MainImageStyle"
+                android:src="@drawable/huiyixiangqing_top" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                style="@style/MainImageStyle"
+                android:src="@drawable/huiyixiangqing_top" />
+
+            <include layout="@layout/view_bar_line" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                layout="@layout/view_bar_line" />
+
+            <include
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/listview_custom"
+                android:background="@color/white"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true" />
+
+            <include layout="@layout/view_bar_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

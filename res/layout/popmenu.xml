@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popmenu_bg"
+    android:orientation="vertical"
+    android:paddingBottom="8.0dip"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="16.0dip" >
+
+    <com.gheng.exhibit.widget.WrapWidthListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:divider="@drawable/submit_order_boundary_fine"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

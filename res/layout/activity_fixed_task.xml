@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <LinearLayout
+        android:id="@+id/ft_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:background="@color/xiaoguo_title2_bg"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/ft_view"
+            android:layout_width="match_parent"
+            android:layout_height="15dp" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/ft_titlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/ft_goback"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/title_margin_top"
+                android:background="@android:color/transparent"
+                android:paddingRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/wuzhen_back" />
+
+            <TextView
+                android:id="@+id/ft_titletv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/title_margin_top"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="19dp" />
+        </RelativeLayout>
+    </LinearLayout> -->
+     <include 
+    layout="@layout/title" />
+
+    <LinearLayout
+        android:id="@+id/ft_linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal" 
+        
+        >
+
+        <com.gheng.exhibit.widget.PinnedHeaderListView
+            android:id="@+id/ft_PinnedHeaderlistview"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none" />
+
+        <com.gheng.exhibit.widget.BladeView
+            android:id="@+id/ft_myletterlistview"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ft_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:visibility="gone" 
+        />
+
+    <TextView
+        android:id="@+id/ft_tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textColor="@color/xiaoguo_title2_bg"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ft_select_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ft_tv_selectAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <ImageView 
+                android:id="@+id/ft_iv_selecteAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_mytask_nomal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                android:text="全选"
+                android:textColor="#90000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#bcbcbc" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ft_tv_comimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="10dp"
+                android:text="提交"
+                android:textColor="#90000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

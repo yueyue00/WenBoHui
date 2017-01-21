@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView 
+    android:id="@+id/mytask_list_tv_groupname"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    android:background="#cccccc"
+    android:text="9月19日  星期三"
+    android:textSize="13sp"
+    android:paddingLeft="18dp"
+    />
+<ListView 
+    android:id="@+id/mytask_inside_list"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    ></ListView>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_suixingrenyuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relative_jinrusixi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_huiwufuwu"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:text="aaa"
+                android:textColor="@color/text_title"
+                android:textSize="15dp"
+                android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/image_jinrusixi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/wuzhen_vipinfo" />
+
+            <TextView
+                android:id="@+id/text_vipserver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/text_vipsixinlianxi"
+                android:layout_toRightOf="@+id/text_huiwufuwu"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="aaa"
+                android:textColor="@color/text_details"
+                android:textSize="15dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/text_vipsixinlianxi"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/image_jinrusixi"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="aaa"
+                android:textColor="@color/red_dh"
+                android:textSize="15dp"
+                android:typeface="sans"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eaeaea" />
+
+        <RelativeLayout
+            android:id="@+id/relative_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_lianxifangshi"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="ccc"
+                android:textColor="@color/text_title"
+                android:textSize="15dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/text_vipserverphonenumber"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/image_phone"
+                android:layout_toRightOf="@+id/text_lianxifangshi"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="ccc"
+                android:textColor="@color/text_details"
+                android:textSize="15dp"
+                android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/image_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wuzhen_viptelephone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

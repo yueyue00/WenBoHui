@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/common_list_padding" >
+
+    <ImageView
+        android:id="@+id/arrow"
+        style="@style/wrap_All"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/right"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/arrow"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/ScheduleInfoRow" >
+
+            <TextView
+                android:id="@+id/time_label"
+                style="@style/ScheduleInfoCellLabel"
+                android:textSize="@dimen/content_font_size_big" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/ScheduleInfoCellValue"
+                android:textSize="@dimen/content_font_size_big" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_row"
+            style="@style/ScheduleInfoRow"
+            android:layout_marginLeft="30dp" >
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/ScheduleInfoCellValue"
+                android:textSize="@dimen/content_font_size_big" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/name_row"
+            style="@style/ScheduleInfoRow" 
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/name_label"
+                style="@style/ScheduleInfoCellLabel" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/ScheduleInfoCellValue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/workplace_row"
+            style="@style/ScheduleInfoRow" 
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/workplace_label"
+                style="@style/ScheduleInfoCellLabel" />
+
+            <TextView
+                android:id="@+id/workplace"
+                style="@style/ScheduleInfoCellValue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_to_comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingRight="10dp" >
+            <ImageView
+                android:id="@+id/iv_praise_count"
+                style="@style/wrap_All"
+                android:src="@drawable/btn_zan" />
+
+            <TextView
+                android:id="@+id/tv_praise_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:textColor="@color/company_stand"
+                android:textSize="@dimen/content_font_size" />
+            
+            <ImageView
+                android:id="@+id/iv_fav_list"
+                style="@style/wrap_All"
+                android:src="@drawable/fav" 
+              	android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_fav_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:textColor="@color/company_stand"
+                android:textSize="@dimen/content_font_size" />
+
+            <ImageView
+                android:id="@+id/iv_to_list"
+                style="@style/wrap_All"
+                android:src="@drawable/schedule_comment" 
+                 android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/company_stand"
+                android:textSize="@dimen/content_font_size" 
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

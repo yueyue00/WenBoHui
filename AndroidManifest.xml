@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartdot.wenbo.huiyi"
+    android:versionCode="1"
+    android:versionName="V1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <!-- Required 自定义用来收发消息的相关权限 -->
+    <permission
+        android:name="com.smartdot.wenbo.huiyi.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.smartdot.wenbo.huiyi.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.gheng.exhibit.application.MyApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- android:name=".view.LoginActivity" -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.MineInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.RegisterNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.VoteSubmitActivity"
+            android:screenOrientation="portrait" />
+        <!-- 大会新闻页面Activity    @author  任致华 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.MineActivtiy"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <!-- 大会新闻页面Activity 自定义控件形式的   @author  任致华 -->
+
+        <activity
+            android:name="com.gheng.exhibit.view.noused.PchiNewsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.DaoHangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <!-- 大会新闻页面Activity webview形式的   @author  任致华 -->
+
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.PchiNewsWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <!-- 我的关注页面Activity    @author  任致华 -->
+
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.MineAttentionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.HuiYiXiangQingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 会议详情页面Activity    @author  任致华 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.MineAttentionPchiDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity
+            android:name="com.gheng.exhibit.view.MainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 服务人员  lixm  服务签到 固定任务  FixedTaskActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.FixedTaskActivity"
+            android:screenOrientation="portrait" />
+        <!-- 服务人员  lixm  服务签到  MytaskListActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.MytaskListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 服务人员  lixm  服务签到  MytaskVipListActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.MytaskVipListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 服务人员  lixm  我的任务 MyTaskActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.MyTaskActivity"
+            android:screenOrientation="portrait" />
+        <!-- 服务人员 lixm  司机  MyTaskDriverActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.MyTaskDriverActivity"
+            android:screenOrientation="portrait" />
+        <!-- 嘉宾信息 lixm  VIPInfoActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.VIPInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 嘉宾信息列表   lixm   VipinfoListActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.VipinfoListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 文化年展  lixm  CulturalExhibitActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.CulturalExhibitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 日程详情  lixm  SchduleDetailActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.SchduleDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 服务签到  签到  lixm  SignActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.SignActivity"
+            android:screenOrientation="portrait" />
+        <!-- 文化年展  语音播放==》服务 lixm -->
+        <service android:name="com.gheng.exhibit.service.PlayVoiceService" >
+        </service>
+        <!-- android:launchMode="singleTask" -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.CultrualExhibitDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.CulturalExhibitListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.SearchCompanyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.SaleDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityDialog" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.CompanyInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.PartnerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.SpeakerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.ScheduleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.ScheduleInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.CompanyEditAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.SpeakerInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.PchiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.ExhibitImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.ConferenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.CompanyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.ProductListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.ProductInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.TravelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.TrafficBaiduActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.RestaurantListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.HotelListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.NationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.Product2016Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.RegisterCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.VideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.gheng.exhibit.view.map.MapIndexActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.map.MapShowActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.map.MapSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.map.FloorListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.map.ImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.ProductTypeListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.CommentSubmitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.MineFavActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.MineCommentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.BatchSelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.CommentListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.SignUpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.noused.ScheduleSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.MineScheduleListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.QuestionInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent1105282125" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gheng.exhibit.view.noused.PopupWindowActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/zidingyiDialog"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 消息中心activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.XiaoXiZhongXinActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 消息中心详情activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.XiaoXiZhongXinXiangQingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 用户设置界面activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.SettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 修改密码activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.ModifyPasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 个人信息介绍界面activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.noused.GeRenXinXiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <!-- 选择场馆activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.map.ShiNeiDaoHangActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <!-- 选择场馆activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.map.ShiNeiDaoHangSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <!-- 会场导航activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.map.DingWeiDaoHangActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <!-- 会议日程搜索记录界面activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.HuiYiRiChengSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 展示WebView的activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.ShowWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 关于我们(中文)的activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.AboutUsActivity_zh"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <!-- 关于我们(英语)的activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.AboutUsActivity_en"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <!-- 联系我们(中文)的activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.ConnectUsActivity_zh"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <!-- 设置界面二维码的activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.SettingErweimaActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <!-- 大会点评  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.DaHuiDianPingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 大会点评_我的 马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.DaHuiDianPingMineActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <!-- 展示图片activity  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.ShowDaHuiDianPingPhotosActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 发表主题界面  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.AddDaHuiDianPingZhuTiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+
+        <!-- 大会点评_详情  马晓勇添加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.DaHuiDianPingDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 选择图片界面  马晓勇添加 -->
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <!-- 闪屏界面activity  马晓勇添加    ============================================= -->
+        <activity
+            android:name="com.gheng.exhibit.view.StartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 新加 zyj加 ResultActivity -->
+        <activity
+            android:name="com.dtr.zxing.activity.ResultActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加 zyj加 CaptureActivity -->
+        <activity
+            android:name="com.dtr.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加 zyj加 TestGeneratectivity -->
+        <activity
+            android:name="com.dtr.zxing.activity.TestGeneratectivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加 zyj加 FWMainActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.FWMainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加 zyj加 TaxisActivity -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.TaxisActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加 zyj加 ContactSearchActivity -->
+        <activity
+            android:name="com.gheng.exhibit.rongyun.activity.ContactSearchActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加 zyj加 GroupInfoActivity -->
+        <activity
+            android:name="com.gheng.exhibit.rongyun.activity.GroupInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加 zyj加 PhotoActivity -->
+        <activity
+            android:name="com.gheng.exhibit.rongyun.activity.PhotoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加RongDemoTabs zyj加 -->
+        <activity
+            android:name="com.gheng.exhibit.rongyun.RongDemoTabs"
+            android:screenOrientation="portrait" />
+        <!-- 新加ContactActivity zyj加 -->
+        <activity
+            android:name="com.gheng.exhibit.rongyun.contact.ContactActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加JiaBinFuWuActivity zyj加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.JiaBinFuWuActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加ZhanShangSJActivity zyj加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.ZhanShangSJActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加HuiYiRiChengActivity zyj加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.HuiYiRiChengActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加viplistactivity zyj加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.viplist.VIPlistActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加viplistactivity zyj加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.viplist.VIPXiangQingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加viplistactivity zyj加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.HuiChangZNActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加viplistactivity zyj加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.BaiDuMapActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 新加viplistactivity zyj加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.viplist.FuWuSiXingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 新加酒店信息activity 王雷加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.JiuDianXinXiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.JiuDianActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 新加宴会餐饮activity 王雷加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.YanHuiCanYinActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 新加私信聊天activity 王雷加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.SiXinActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 新加专属服务activity 王雷加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.VipZhuanShuFWActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 新加登陆activity 王雷加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.DengLuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 新加贵宾行程activity 王雷加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.XingChengAnPaiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 新加Vip服务Activity 王雷加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.MyScheduleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.DaHuiDataActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新加大会详情Activity 王雷加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.DaHuiXiangQingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 新加新闻列表Activity 王雷加 -->
+        <activity
+            android:name="com.gheng.exhibit.xinwen.ActivityMy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 新加未激活用户登陆进入界面 王雷加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.NotactivationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 分享显示SDK -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="cn.sharesdk.socialization.sample.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 新加新闻详情webview界面  任致华加 -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.PchinewsdetailsWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 融云通信需要的activity 融云通信需要的activity 融云通信需要的activity 融云通信需要的activity -->
+        <!-- 会话页面 -->
+        <activity
+            android:name="com.gheng.exhibit.rongyun.activity.ConversationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.smartdot.wenbo.huiyi"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="io.rong.push.PushService"
+            android:process="io.rong.push" > <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="io.rong.push.CommandService"
+            android:process="io.rong.push" > <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.command" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push" > <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="io.rong.imkit.tools.SelectPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.PreviewPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" >
+        </service>
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver android:name="io.rong.imlib.ipc.PushMessageReceiver" >
+            <intent-filter>
+                <action android:name="io.rong.push.message" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="qf3d5gbj3j06h" />
+        <!-- 融云通信需要的activity 融云通信需要的activity 融云通信需要的activity 融云通信需要的activity -->
+        <service
+            android:name="com.gheng.exhibit.http.VersionService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.gheng.exhibit.http.VersionService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.aprilbrother.aprilbrothersdk.service.BeaconService"
+            android:exported="false" />
+
+        <!-- 设置极光推送必要属性 设置极光推送必要属性 设置极光推送必要属性 设置极光推送必要属性 -->
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.smartdot.wenbo.huiyi" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.smartdot.wenbo.huiyi" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.smartdot.wenbo.huiyi" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver android:name="com.hebg3.wl.push.MyReceiver" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.smartdot.wenbo.huiyi" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- 设置极光推送必要属性 设置极光推送必要属性 设置极光推送必要属性 设置极光推送必要属性 -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="548a4c6eea8c8f418d6dcf3a" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="zjtQcjGMIexUZhNSR2mcQA0etYAFEL8z" /> <!-- 值来自百度开发者平台取得的AppKey -->
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.XingChengDetailActivity"
+            android:label="@string/title_activity_xing_cheng_detail" >
+        </activity>
+        <activity
+            android:name="com.gheng.exhibit.view.checkin.checkin.VipListSearchActivity"
+            android:label="@string/title_activity_vip_list_search" >
+        </activity>
+    </application>
+    <!-- ****************lyy shardSdk start************ -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- ****************lyy shardSdk end************ -->
+    <!-- 百度地图权限    zyj 百度地图权限 百度地图权限 百度地图权限 百度地图权限 百度地图权限 百度地图权限 百度地图权限 -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 百度地图权限    zyj 百度地图权限 百度地图权限 百度地图权限 百度地图权限 百度地图权限 百度地图权限 百度地图权限 -->
+    <!-- 融云通信权限    zyj 融云通信权限融云通信权限融云通信权限融云通信权限融云通信权限融云通信权限融云通信权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- 查看 Wi-Fi 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 融云通信权限    zyj 融云通信权限融云通信权限融云通信权限融云通信权限融云通信权限融云通信权限融云通信权限 -->
+
+</manifest>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_backgroud"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:rightLineShow="true"
+        titleBar:rightText="@string/logout"
+        titleBar:text="@string/login"
+        titleBar:textSize="@dimen/title_font_size" />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleBar"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/login_content"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dip"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/login"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/title_padding" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/username"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_font_size" />
+
+                <com.gheng.exhibit.widget.ClearEditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:hint="@string/username_hint"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_font_size" />
+
+                <com.gheng.exhibit.widget.ClearEditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_content"
+            android:layout_margin="@dimen/margin" >
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/red_selector"
+                android:padding="@dimen/title_padding"
+                android:text="@string/login"
+                android:layout_marginTop="@dimen/title_height"
+                android:textSize="@dimen/content_font_size"
+                android:textColor="@drawable/selector_font" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftImageSrc="@drawable/back"
+        titleBar:leftLineShow="false"
+        titleBar:textSize="@dimen/title_font_size" >
+    </com.gheng.exhibit.widget.TitleBar>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_backgroud"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/title_padding"
+            android:visibility="gone" >
+
+            <!-- 联系人姓名 -->
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin" >
+
+                <TextView
+                    android:id="@+id/contact_lable"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="@dimen/content_font_size"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/contact_value"
+                    android:layout_width="wrap_content"
+                    android:autoLink="all"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/title_padding"
+                    android:text=""
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/content_font_size"
+                    android:typeface="sans" />
+            </TableRow>
+            <!-- 联系人电话 -->
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/phone_lable"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="@dimen/content_font_size"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/phone_value"
+                    android:layout_width="wrap_content"
+                    android:autoLink="all"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/title_padding"
+                    android:text=""
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/content_font_size"
+                    android:typeface="sans" />
+            </TableRow>
+            <!-- qq人电话 -->
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/qq_lable"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="@dimen/content_font_size"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/qq_value"
+                    android:layout_width="wrap_content"
+                    android:autoLink="all"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/title_padding"
+                    android:text=""
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/content_font_size"
+                    android:typeface="sans" />
+            </TableRow>
+            <!-- qq人地址 -->
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/address_lable"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="@dimen/content_font_size"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/address_value"
+                    android:layout_width="wrap_content"
+                    android:autoLink="all"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/title_padding"
+                    android:text=""
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/content_font_size"
+                    android:typeface="sans" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/btn_gray" />
+    </LinearLayout>
+
+</LinearLayout>

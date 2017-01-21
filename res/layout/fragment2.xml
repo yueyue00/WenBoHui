@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/genbuju"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbeijing"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <HorizontalScrollView
+        android:id="@+id/fragment2_horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dip"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/liear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E5E6E6"
+                android:orientation="horizontal" >
+
+                <GridView
+                    android:id="@+id/GridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:cacheColorHint="#00000000"
+                    android:gravity="center"
+                    android:horizontalSpacing="1.0dip"
+                    android:listSelector="#00000000"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="1.0dip" >
+                </GridView>
+            </LinearLayout>
+        </FrameLayout>
+    </HorizontalScrollView>
+
+    <com.gheng.exhibit.xinwen.MyViewPager
+        android:id="@+id/fragment2_vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/nodatafound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+</LinearLayout>

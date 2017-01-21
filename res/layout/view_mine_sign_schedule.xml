@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.gheng.exhibit.widget.PinnedHeaderExpandableListView
+        android:id="@+id/lv"
+        style="@style/fill_All"
+        android:background="@color/white"
+        android:childDivider="@null"
+        android:childIndicator="@null"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:groupIndicator="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/text_title"
+        android:textSize="@dimen/content_font_size_big"
+        android:typeface="sans" />
+
+</RelativeLayout>

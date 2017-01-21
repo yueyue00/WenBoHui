@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <ShareSDK AppKey="15582be722ac2" />
+
+    <SinaWeibo
+        AppKey="2343028942"
+        AppSecret=""
+        RedirectUrl="http://www.weibo.com"
+        BypassApproval="true"
+        Enable="true"
+        Id="4"
+        ShareByAppClient="true"
+        SortId="4" />
+    <QQ
+        AppId="1105281185"
+        AppKey="2lqTpPXnQGanQdIj" 
+        BypassApproval="true"
+        Enable="true"
+        Id="3"
+        ShareByAppClient="true" 
+        SortId="3" />
+
+    <Wechat
+        AppId="wxf29769230c8e869b"
+        AppSecret=""
+        BypassApproval="true"
+        Enable="true"
+        Id="1"
+        SortId="1" />
+
+    <WechatMoments
+        AppId="wxf29769230c8e869b"
+        AppSecret=""
+        BypassApproval="true"
+        Enable="true"
+        Id="2"
+        SortId="2" />
+</DevInfor>

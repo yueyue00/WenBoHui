@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftImageSrc="@drawable/back"
+        titleBar:leftLineShow="false"
+        titleBar:rightImageSrc="@drawable/search"
+        titleBar:rightLineShow="false"
+        titleBar:textSize="@dimen/title_font_size" >
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_height"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/title_search_margin"
+            android:layout_marginRight="@dimen/title_search_margin"
+            android:background="@drawable/bg_edit_search"
+            android:paddingLeft="@dimen/search_edt_coners"
+            android:textSize="@dimen/small"
+            android:singleLine="true"
+            android:visibility="gone" />
+    </com.gheng.exhibit.widget.TitleBar>
+
+    <TextView
+        android:id="@+id/tv_type_name"
+        style="@style/wrap_width"
+        android:background="@color/ablack"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/content_font_size_big" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_backgroud"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/lv"
+            layout="@layout/pull_listview" />
+    </LinearLayout>
+
+</LinearLayout>

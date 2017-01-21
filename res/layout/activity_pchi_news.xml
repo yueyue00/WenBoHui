@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title"/>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/company_list_tab_height"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <RadioButton
+            android:id="@+id/rbtn_pchinews_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/pchinews_news"
+            android:textColor="@drawable/text_company_selector"
+            android:textSize="@dimen/content_font_size_middle" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/agray" />
+
+        <RadioButton
+            android:id="@+id/rbtn_pchinews_press"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/pchinews_press"
+            android:textColor="@drawable/text_company_selector"
+            android:textSize="@dimen/content_font_size_middle" />
+        
+         <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/agray" />
+         <RadioButton
+            android:id="@+id/rbtn_pchinews_exhibition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/pchinews_exhibition"
+            android:textColor="@drawable/text_company_selector"
+            android:textSize="@dimen/content_font_size_middle" />
+        
+         <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/agray" />
+         <RadioButton
+            android:id="@+id/rbtn_pchinews_activity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/pchinews_activity"
+            android:textColor="@drawable/text_company_selector"
+            android:textSize="@dimen/content_font_size_middle" />
+        <RadioButton
+            android:id="@+id/rbtn_other"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/other"
+            android:visibility="gone"
+            android:textColor="@drawable/text_company_selector"
+            android:textSize="@dimen/content_font_size_middle" />
+    </RadioGroup>
+     <LinearLayout
+        android:id="@+id/tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/iv_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/common_red_font" />
+        
+        <ImageView
+            android:id="@+id/iv_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+        	android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"
+            android:background="@color/common_red_font"/>
+        <ImageView
+            android:id="@+id/iv_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+        	android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"
+            android:background="@color/common_red_font"/>
+        <ImageView
+            android:id="@+id/iv_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+        	android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"
+            android:background="@color/common_red_font"/>
+        
+        
+    </LinearLayout> 
+    <include 
+        layout="@layout/view_bar_line"/>
+    
+     <com.gheng.exhibit.widget.MyViewPager
+        android:id="@+id/pchinews_vp"
+        style="@style/fill_All" />
+   
+	
+
+</LinearLayout>

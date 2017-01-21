@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+    android:padding="@dimen/padding" >
+
+    <TextView
+        android:id="@+id/vote_submit_question"
+        style="@style/vote_submit_question"
+        android:text="" />
+
+    <com.gheng.exhibit.widget.CustomListView
+        android:id="@+id/vote_submit_listview"
+        style="@style/vote_submit_listview" >
+    </com.gheng.exhibit.widget.CustomListView>
+
+</LinearLayout>

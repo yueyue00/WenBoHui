@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 背景色 -->
+    <color name="vote_submit_orange">#ff864e</color>
+    <color name="main_title_bg">#e4393c</color>
+    <color name="main_baoming_bg">#f1584c</color>
+    <color name="sanjiaoxingbg">#C2C2C2</color>
+
+    <!-- 字体颜色 -->
+    <color name="main_title_font">#252525</color>
+    <color name="main_icon_font">#a9a9a9</color>
+    <color name="main_baoming_font">#f1584c</color>
+    <color name="lansebaoming">#1884DA</color>
+    <color name="main_schedule_font">#040404</color>
+    <color name="title_font">#040404</color>
+    <color name="common_red_font">#f1584c</color>
+    <color name="common_gray_font">#a9a9a9</color>
+    <color  name ="zhongyaohuiyi">#b5b5b5</color>
+    <color  name ="qianhuise">#EAEAEA</color>
+    <color  name="vipbeijing">#E8E8E8</color>
+    <!-- 展位号 -->
+    <color name="company_stand">#FFB972</color>
+    <color name="company_info_label">#7A7772</color>
+    <color name="company_info_remark">#666460</color>
+
+</resources>

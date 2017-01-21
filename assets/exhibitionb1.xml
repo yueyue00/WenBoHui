@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Areas
+    areaId="China"
+    areaTitle="中国地图"
+    desc="中国各省份地图" >
+    <Area
+        areaId="b1_dhcy"
+        areaTitle="敦煌创意文化产品展"
+        desc="敦煌创意文化产品展"
+        pts="7,60,114,185" />
+    <Area
+        areaId="b1_lsrx"
+        areaTitle="兰生染缬作品展"
+        desc="lanshengzuopin"
+        pts="8,230,112,354"
+        />
+    <Area
+        areaId="b1_hdsdgactywhz"
+        areaTitle="互动时代港澳台创意文化展"
+        desc="chuangyichanpin"
+        pts="104,394,287,527"
+        />
+   <Area
+       areaId="b1_mgxg"
+       areaTitle="莫高霞光当代艺术展"
+       desc="莫高霞光当代艺术展"
+       pts="491,228,598,359"
+       />
+   <Area
+       areaId="b1_zjscz"
+       areaTitle="浙江丝绸展"
+       desc="zhejiangsichou"
+       pts="493,60,600,184"
+       />
+   <Area
+       areaId="b1_dhcq"
+       areaTitle="敦煌传奇丝绸之路动漫作品"
+       desc="敦煌传奇丝绸之路动漫作品"
+       pts="310,60,483,219"
+       />
+   <Area
+       areaId="b1_yxsl"
+       areaTitle="影像丝路国际摄影艺术作品"
+       desc="yingxiangsilu"
+       pts="316,222,483,378"
+       />
+   <Area
+       areaId="b1_sxsl"
+       areaTitle="书香丝路丝绸之路精品图书"
+       desc="shuxiangsilu"
+       pts="123,39,284,209"
+       />
+   <Area
+       areaId="b1_slcy"
+       areaTitle="丝路茶韵丝绸之路茶文化展演"
+       desc="siluchayun"
+       pts="123,209,286,375"
+       />
+  
+</Areas>

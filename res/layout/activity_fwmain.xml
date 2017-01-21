@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- *************** 标题布局 ***************** -->
+
+    <LinearLayout
+        android:id="@+id/home_toply"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/xiaoguo_title2_bg"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/app_title_home" >
+
+        <RelativeLayout
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_launcher"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/main_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="19dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <!-- 添加设置按钮 -->
+
+            <ImageView
+                android:id="@+id/image_shezhi"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/home_setting" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- ****************************九宫格布局********************************* -->
+
+    <com.gheng.exhibit.widget.CustomGridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@drawable/list_selector" />
+
+    <TextView
+        android:id="@+id/bigfengexian"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@id/gridview"
+        android:background="@color/beijing" />
+    <!-- ****************************消息布局即listview布局********************************* -->
+
+    <RelativeLayout
+        android:id="@+id/xiaoxizhongxinlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bigfengexian"
+        android:layout_below="@id/home_toply"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/relay_xiaoxititle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:id="@+id/linear_tongzhi_gengduo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/home_inform" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/home_gvcolor" />
+
+                <TextView
+                    android:id="@+id/xiaoxilogotext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="通知"
+                    android:textColor="@color/home_gvcolor"
+                    android:textSize="15dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xiaoxizhongxinbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingBottom="1dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:text="更多"
+                android:textColor="@color/app_title1"
+                android:textSize="15dp"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fengexian"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relay_xiaoxititle"
+            android:background="#aaaaaa"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fengexian"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/nodatafound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fengexian"
+            android:gravity="center"
+            android:lines="1"
+            android:text="暂时没有消息"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="17dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

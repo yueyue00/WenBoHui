@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftImageSrc="@drawable/back"
+        titleBar:leftLineShow="false"
+        titleBar:rightImageSrc="@drawable/search"
+        titleBar:rightLineShow="false"
+        titleBar:textSize="@dimen/title_font_size" >
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_height"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/title_search_margin"
+            android:layout_marginRight="@dimen/title_search_margin"
+            android:background="@drawable/bg_edit_search"
+            android:paddingLeft="@dimen/search_edt_coners"
+            android:textSize="@dimen/small"
+            android:singleLine="true"
+           />
+    </com.gheng.exhibit.widget.TitleBar>
+
+    <TextView
+        android:id="@+id/tv_type_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ablack"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/content_font_size"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/company_list_tab_height"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <RadioButton
+            android:id="@+id/rbtn_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text=""
+            android:textColor="@drawable/text_company_selector"
+            android:textSize="@dimen/content_font_size_middle" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/agray" />
+
+        <RadioButton
+            android:id="@+id/rbtn_nation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text=""
+            android:textColor="@drawable/text_company_selector"
+            android:textSize="@dimen/content_font_size_middle" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/agray" />
+
+        <RadioButton
+            android:id="@+id/rbtn_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text=""
+            android:textColor="@drawable/text_company_selector"
+            android:textSize="@dimen/content_font_size_middle" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/iv_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/common_red_font" />
+
+        <View
+            android:id="@+id/iv_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/common_red_font"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/iv_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/common_red_font"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        style="@style/wrap_width"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:scrollbars="none" >
+
+        <com.gheng.exhibit.widget.LetterLayout
+            android:id="@+id/letter"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+        </com.gheng.exhibit.widget.LetterLayout>
+    </HorizontalScrollView>
+
+    <include layout="@layout/view_bar_line" />
+
+    <com.gheng.exhibit.widget.MyViewPager
+        android:id="@+id/vp"
+        style="@style/fill_All" />
+
+</LinearLayout>

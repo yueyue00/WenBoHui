@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill_All"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/fill_All"
+        android:background="@drawable/submit_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/text_title"
+        android:textSize="18sp"
+        android:typeface="sans" />
+
+</LinearLayout>

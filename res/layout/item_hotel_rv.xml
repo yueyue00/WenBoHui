@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_huibeijing"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/beijing" />
+
+    <RelativeLayout
+        android:id="@+id/relative_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/iv_angle"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/iv"
+            android:adjustViewBounds="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_angle" >
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="开始时间："
+                android:textColor="@color/common_red_font"
+                android:textSize="@dimen/content_font_size"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/time_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_start"
+                android:text="aaa"
+                android:textColor="@color/common_red_font"
+                android:textSize="@dimen/content_font_size"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/tv_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_start"
+                android:layout_marginLeft="10dp"
+                android:text="结束时间："
+                android:textColor="@color/common_red_font"
+                android:textSize="@dimen/content_font_size"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/time_start"
+                android:layout_below="@id/tv_start"
+                android:layout_toRightOf="@id/tv_end"
+                android:text="aaa"
+                android:textColor="@color/common_red_font"
+                android:textSize="@dimen/content_font_size"
+                android:typeface="sans" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/wrap_width"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_jiudianname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="jiudianname"
+            android:textColor="@color/text_details"
+            android:textSize="@dimen/content_font_size_middle"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/text_roomid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="roomid"
+            android:textColor="@color/text_details"
+            android:textSize="@dimen/content_font_size_middle"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/text_jiudianlocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="jiudianlocation"
+            android:textColor="@color/text_details"
+            android:textSize="@dimen/content_font_size_middle"
+            android:typeface="sans" />
+
+        <View
+            android:id="@+id/item_jiudian_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/beijing"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

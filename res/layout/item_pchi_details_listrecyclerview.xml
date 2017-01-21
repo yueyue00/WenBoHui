@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp" >
+
+        <ImageView
+            android:id="@+id/guestphoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a_huiyiricheng_guesticon" />
+
+        <RelativeLayout
+            android:id="@+id/guest_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/guestphoto" >
+
+            <TextView
+                android:id="@+id/guest_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="1"
+                android:text="张宇"
+                android:textColor="@color/text_title"
+                android:textSize="16dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/guest_post"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guest_name"
+                android:gravity="left|center_vertical"
+                android:lines="3"
+                android:text="互联网事业部首席技术官张宇互联网事业部首席技术官张宇互联网事业部首席技术官张宇互联网事业部首席技术官张宇"
+                android:textColor="@color/zhiweijieshao"
+                android:textSize="14dp"
+                android:typeface="sans" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

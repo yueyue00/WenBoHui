@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/indoor_map"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.gheng.exhibit.widget.TitleBar
+            xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/titleBar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/title"
+            android:paddingLeft="@dimen/title_padding"
+            android:paddingRight="@dimen/title_padding"
+            titleBar:leftImageSrc="@drawable/back"
+            titleBar:leftLineShow="false"
+            titleBar:textSize="@dimen/title_font_size" >
+        </com.gheng.exhibit.widget.TitleBar>
+
+        <RelativeLayout
+            android:id="@+id/view"
+            style="@style/wrap_width"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/btn_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <com.gheng.exhibit.widget.SegmentedGroup
+                android:id="@+id/searchType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                segmentedgroup:border_width="1dp"
+                segmentedgroup:checked_text_color="@color/black"
+                segmentedgroup:corner_radius="5dp" >
+
+                <RadioButton
+                    android:id="@+id/exhibitor"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="展商" />
+
+                <RadioButton
+                    android:id="@+id/exhibit"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="展品" />
+                
+                 <RadioButton
+                    android:id="@+id/zone"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="展区" />
+            </com.gheng.exhibit.widget.SegmentedGroup>
+
+            <EditText
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_height"
+                android:layout_below="@id/searchType"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@drawable/bg_edit_search"
+                android:paddingLeft="@dimen/search_edt_coners"
+                android:singleLine="true"
+                android:textSize="@dimen/small" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv"
+            style="@style/wrap_width"
+            android:layout_marginTop="10dp"
+            android:background="@color/btn_gray"
+            android:cacheColorHint="@null"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:padding="@dimen/padding"
+            android:verticalSpacing="5dp" />
+
+        <ListView
+            android:id="@+id/lv"
+            style="@style/wrap_width"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="@null"
+            android:divider="#AAAAAA"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@null" />
+    </LinearLayout>
+
+</RelativeLayout>

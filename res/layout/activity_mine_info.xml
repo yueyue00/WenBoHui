@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftImageSrc="@drawable/back"
+        titleBar:leftLineShow="false"
+        titleBar:text=""
+        titleBar:textSize="@dimen/title_font_size" >
+    </com.gheng.exhibit.widget.TitleBar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/margin"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:orientation="vertical"
+            android:paddingBottom="50dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/firstNameLable"
+                    style="@style/lable_style"
+                    android:text="姓：" />
+
+                <EditText
+                    android:id="@+id/firstName"
+                    style="@style/input_style"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lastNameLable"
+                    style="@style/lable_style"
+                    android:text="名字：" />
+
+                <EditText
+                    android:id="@+id/lastName"
+                    style="@style/input_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phonevalid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1000"
+                    android:background="@android:color/transparent"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:paddingLeft="5dp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/validate_red"
+                    android:gravity="center"
+                    android:padding="@dimen/mtype_info_padding"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_code"
+                style="@style/input_style"
+                android:visibility="gone" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/emailLable"
+                    style="@style/lable_style"
+                    android:text="邮件：" />
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/input_style"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/positionLable"
+                    style="@style/lable_style"
+                    android:text="职位：" />
+
+                <EditText
+                    android:id="@+id/position"
+                    style="@style/input_style"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/workplaceLable"
+                    style="@style/lable_style"
+                    android:text="工作单位：" />
+
+                <EditText
+                    android:id="@+id/workplace"
+                    style="@style/input_style"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pchi_item_height"
+                android:background="@drawable/corners_bg_white_all" >
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/wrap_All"
+                    android:layout_width="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_font_size_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_row"
+                    style="@style/wrap_All"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

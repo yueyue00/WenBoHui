@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="floorNames">
+        <item>Hall1</item>
+        <item>Hall2</item>
+        <item>Hall3</item>
+        <item>Hall4</item>
+    </string-array>
+    <string-array name="floorDescs">
+        <item>救护车展区；省市展团</item>
+        <item>省市展团</item>
+        <item>CMEF影像区；CMEF 体外诊断区；CMEF 骨科区；医用耗材区；医用光学区；医院设备区；手术室及急救区；省市展团</item>
+        <item>国际展区；养老专区；康复演示区；康复家具区 康复理疗区；康复理疗区；居家康复、家用医疗区</item>
+    </string-array>
+    <string-array name="floorEnDescs">
+        <item>Ambulance;Provinces Pavilions </item>
+        <item>Provinces Pavilions</item>
+        <item>CMEF Imaging;CMEF IVDCMEF Orthopedics;Medical Disposable;Medical Optical Devices;Hospital Equipment;Surgery &#038; Emergency;Provinces Pavilions</item>
+        <item>International zone;Senior care;Technology Forum;Rehabilitation furniture;Rehabilitation therapy;Rehabilitation at home, home use medical devices</item>
+    </string-array>
+    <string-array name="searchKeyword">
+        <item>出入口</item>
+        <item>男卫生间</item>
+        <item>女卫生间</item>
+        <item>休息区</item>
+        <item>直梯</item>
+        <item>步行梯</item>
+    </string-array>
+    <string-array name="enSearchKeyword">
+        <item>Entrance&amp;Exit</item>
+        <item>Men Room</item>
+        <item>Women Room</item>
+        <item>Rest</item>
+        <item>Ladder</item>
+        <item>Stairs</item>
+    </string-array>
+    
+</resources>

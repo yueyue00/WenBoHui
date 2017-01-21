@@ -1,0 +1,113 @@
+<resources>
+
+    <!-- 测试机分辨率 -->
+    <dimen name="aaa">300dp</dimen>
+    <dimen name="home_vip_padding_top">9dp</dimen>
+    <dimen name="home_vip_margin_left">70dp</dimen>
+    <dimen name="home_vip_margin_top">10dp</dimen>
+    <dimen name="home_viewpager_height">200dp</dimen>
+    <dimen name="home_gv_item">70dp</dimen>
+    <dimen name="home_gv_top">15dp</dimen>
+    <dimen name="huiyixiangqing_topiv">230dp</dimen>
+    <dimen name="huiyixiangqing_item_bottom">5dp</dimen>
+    <dimen name="huiyixiangqing_item_top">15dp</dimen>
+    <dimen name="huiyixiangqing_item_left">10dp</dimen>
+    <dimen name="huiyixiangqing_jiabin">120dp</dimen>
+    <dimen name="huiyixiangqing_jiabin_left">10dp</dimen>
+    <dimen name="huiyixiangqing_jiabinitem">70dp</dimen>
+    <dimen name="huiyixiangqing_jiabinitem_left">20dp</dimen>
+    <dimen name="huiyixiangqing_yiti_top">15dp</dimen>
+    <dimen name="huiyixiangqing_yitiitem_left">10dp</dimen>
+    <dimen name="huiyixiangqing_yitiitem_top">15dp</dimen>
+    <dimen name="huiyixiangqing_popw_jiabin">120dp</dimen>
+    <dimen name="huiyixiangqing_popw_jiabin_marginTop">10dp</dimen>
+    <dimen name="huiyixiangqing_popwitem_marginLeft">15dp</dimen>
+    <dimen name="huiyixiangqing_popwitem_marginTop">10dp</dimen>
+    <dimen name="zoujinzunyi_item_height">250dp</dimen>
+    <dimen name="dahuidata_child_pb">150dp</dimen>
+    <dimen name="dahuidata_child_name">200dp</dimen>
+    <dimen name="setting_icon_size">90dp</dimen>
+    <dimen name="guibinxingcheng_head_height">180dp</dimen>
+    <dimen name="guibinxingcheng_usericon">90dp</dimen>
+    <dimen name="guibinxingcheng_item_three">450dp</dimen>
+    <dimen name="guibinxingcheng_item_two">90dp</dimen>
+    <dimen name="jiabinlist_icon">77dp</dimen>
+    <dimen name="jiabinlist_line">65dp</dimen>
+    <dimen name="jiabinxiangqing_icon">90dp</dimen>
+    <dimen name="start_top">200dp</dimen>
+    <dimen name="start_size">18sp</dimen>
+    <dimen name="main_button_tv">16sp</dimen>
+    <dimen name="denglu_icon_bottom">45dp</dimen>
+    <dimen name="denglu_icon_top">10dp</dimen>
+    <dimen name="huichangzn_left">30dp</dimen>
+     
+    <!--lixm  -->
+    <!--首页字体大小  -->
+    <dimen name="home_title_text">18sp</dimen>
+    <dimen name="home_content_text">15sp</dimen>
+    <dimen name="horional_text">15sp</dimen>
+    <dimen name="home_text_time">15sp</dimen>
+    <dimen name="home_ivHead_text1">20sp</dimen>
+    <dimen name="home_ivHead_text2">23sp</dimen>
+    
+    <!-- 首页横向滑动调 -->
+    <dimen name="home_horional_high">37dp</dimen>
+    <dimen name="home_horional_top">48dp</dimen>
+    <dimen name="home_progressState">25dp</dimen>
+    <dimen name="home_arrow_width">15dp</dimen>
+    <dimen name="home_arrow_height">25dp</dimen>
+    <dimen name="horional_tvtitle">33dp</dimen>
+    <dimen name="horizonal_paddingLeft">10dp</dimen>
+    <dimen name="horizonal_paddingRight">10dp</dimen>
+    
+    <!-- 首页尺寸 -->
+    <dimen name="home_ivHead">100dp</dimen>
+    <dimen name="home_ivHead_marginL">20dp</dimen>
+    <dimen name="home_ivHead_marginG">20dp</dimen>
+    <dimen name="home_text1_marginT">13dp</dimen>
+    <dimen name="home_text2_marginT">5dp</dimen>
+    <dimen name="home_linear1_marginB">5dp</dimen>
+    <dimen name="home_sch_marginT">30dp</dimen>
+    <dimen name="home_sch_marginB">5dp</dimen>
+    <dimen name="home_sch_marginL">20dp</dimen>
+    <dimen name="home_sch_marginR">30dp</dimen>
+    <dimen name="home_lineL_marginL">20dp</dimen>
+    <dimen name="home_nowFrame_marginL">10dp</dimen>
+    <dimen name="home_nowFrame_paddingL">40dp</dimen>
+    <dimen name="home_nowTitle_marginT">40dp</dimen>
+    <dimen name="home_nowtvHost_marginT">5dp</dimen>
+    <dimen name="home_view1_width">30dp</dimen>
+    <dimen name="home_lineR_marginL">10dp</dimen>
+    <dimen name="home_lineR_marginR">12dp</dimen>
+    <dimen name="home_time1_marginL">10dp</dimen>
+    <dimen name="home_time1_marginT">20dp</dimen>
+    <dimen name="home_time1_marginB">10dp</dimen>
+    <dimen name="home_relative_marginL">10dp</dimen>
+    <dimen name="home_relative_marginR">10dp</dimen>
+    <dimen name="home_time2_marginR">10dp</dimen>
+    <dimen name="home_time2_marginT">20dp</dimen>
+    <dimen name="home_time2_marginB">10dp</dimen>
+    <dimen name="home_vipLeave_marginT">15dp</dimen>
+    <dimen name="home_vipLeave_linear_marginL">50dp</dimen>
+    <dimen name="home_vipLeave_tv">3dp</dimen>
+    <dimen name="home_webview_margin">30dp</dimen>
+    <dimen name="home_middle_linear_width">30dp</dimen>
+    <dimen name="home_sframe_width">30dp</dimen>
+    <dimen name="home_sframe_height">30dp</dimen>
+    <dimen name="home_sframe_marginB">15dp</dimen>
+    <dimen name="home_hotelInfo_marginT">50dp</dimen>
+    <dimen name="home_hotelInfo_marginB">30dp</dimen>
+    <dimen name="home_hotelInfo_marginL">30dp</dimen>
+    <dimen name="home_hotelInfo_marginR">30dp</dimen>
+    <dimen name="home_hotelInfo_linear_marginR">50dp</dimen>
+    <dimen name="home_hotelInfo_linear_marginT">80dp</dimen>
+    <dimen name="home_hotelInfo_linear_marginB">50dp</dimen>
+    <dimen name="home_hotelInfo_tv_marginT">8dp</dimen>
+    <dimen name="home_rightBottom_linear_marginT">15dp</dimen>
+    <dimen name="home_rightBottom_marginT">40dp</dimen>
+    <dimen name="home_rightBottom_marginB">30dp</dimen>
+    <dimen name="home_rightBottom_marginL">30dp</dimen>
+    <dimen name="home_rightBottom_marginR">30dp</dimen>
+    <dimen name="home_fraWorker_marginL">20dp</dimen>
+    
+</resources>

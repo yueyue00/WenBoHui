@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#bcbcbc"
+        android:layout_marginLeft="12dp"
+        />
+    <LinearLayout 
+       android:orientation="vertical"
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="match_parent"
+      
+        >
+  <LinearLayout
+      android:id="@+id/vipContainner_ll_detail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+       android:layout_marginTop="10dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="10dp"
+      >
+      
+      <TextView
+          android:id="@+id/vipContainer_tv_title"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:text="参加文博会开幕式参加文博会开幕式参加文博会开幕式参加文博会开幕式"
+          android:singleLine="false"
+          android:textSize="18sp"
+          android:textColor="@color/vip_text_color"
+          />
+      
+      <TextView
+          android:id="@+id/vipContainer_tv_detail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="18sp"
+          android:textColor="#fd914c"
+          android:layout_marginLeft="10dp"
+          android:text="详情"/>
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/btn_meetingschdule_address"/>
+     <!-- android:textColor="#bcbcbc" -->
+        <TextView
+            android:id="@+id/vipContainer_tv_location"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="敦煌国际会展中心主报告厅"
+            android:textColor="#fd914c"
+            android:layout_marginLeft="5dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_meetingschdule_time"/>
+        <TextView
+            android:id="@+id/vipContainer_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00 - 11:00"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fd914c"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/vipContainer_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="早晨8:30由华夏国际大酒店出发，乘车前往国际会展中心。您乘坐的是5号车辆，车牌号:甘A.88888,随车服务人员是：李彪 18001040951"
+        android:textSize="16sp"
+        android:textColor="@color/vip_text_color"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+    <!-- <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bcbcbc"
+        /> -->
+</LinearLayout>
+</LinearLayout>

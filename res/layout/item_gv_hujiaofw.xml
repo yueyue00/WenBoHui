@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/home_gv_top"
+    android:paddingTop="@dimen/home_gv_top" >
+
+    <ImageView
+        android:id="@+id/hujiaofw_icon"
+        android:layout_width="@dimen/home_gv_item"
+        android:layout_height="@dimen/home_gv_item"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+         />
+
+    <TextView
+        android:id="@+id/textview"
+        style="@style/wrap_All"
+        android:layout_marginTop="5dp"
+        android:gravity="top|center_horizontal"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/home_gvcolor"
+        android:textSize="@dimen/content_font_size_middle"
+        android:typeface="sans" />
+
+</LinearLayout>

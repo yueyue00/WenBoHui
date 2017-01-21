@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="vertical" 
+    android:gravity="center_vertical"
+    android:background="#ffffff"
+    >
+   
+    <!-- <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"> -->
+    <!-- <ImageView 
+        android:id="@+id/mytask_stick_iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_meetingschedule_1"
+        
+        /> -->
+    <TextView 
+        android:id="@+id/mytask_stick_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="9月19日  星期三"
+        android:gravity="center_vertical"
+        android:textColor="#777777"
+        android:textSize="18sp"
+        android:background="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        />
+    <!-- </LinearLayout> -->
+     <View 
+        android:layout_width="30dp"
+        android:layout_height="2dp"
+        android:background="@color/cultural_location_color"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</LinearLayout>

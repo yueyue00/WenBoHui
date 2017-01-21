@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beijing"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/relative_xingchengtouxiang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guibinxingcheng_head_height"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wuzhen_guibinxingchengbaidian" />
+
+        <ImageView
+            android:id="@+id/image_photo"
+            android:layout_width="@dimen/guibinxingcheng_usericon"
+            android:layout_height="@dimen/guibinxingcheng_usericon"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wuzhen_guibinxingchengbaidian" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/beijing" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_angle"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/iv"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_angle"
+            android:text=""
+            android:textColor="@color/common_red_font"
+            android:textSize="@dimen/content_font_size_big"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+</LinearLayout>

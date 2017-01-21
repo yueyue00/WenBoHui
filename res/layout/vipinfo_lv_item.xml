@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/friends_item_header_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="15dip"
+        android:background="#ffdedede"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/friends_item_header_text"
+            android:layout_width="40dip"
+            android:layout_height="15dip"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/vil_ivicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/a_huiyiricheng_guesticon" />
+
+        <TextView
+            android:id="@+id/vil_tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="张三"
+            android:textColor="#99000000"
+            android:textSize="15sp" />
+
+        
+
+        
+
+        <Button
+            android:id="@+id/vil_btn_sendinfo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sendinfo"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <Button
+            android:id="@+id/vil_btn_call"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_mytask_call"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/gridview_dot"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FD7127" />
+
+    <TextView
+        android:id="@+id/tv_titlename"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#8C8D8D" />
+
+</LinearLayout>

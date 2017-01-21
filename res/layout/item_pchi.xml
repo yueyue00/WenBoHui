@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_pchi"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <View
+        android:id="@+id/view_fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/zhongyaohuiyi" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="@dimen/pchi_list_icon_size"
+            android:layout_height="@dimen/pchi_list_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/wrap_All"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv"
+            android:singleLine="true"
+            android:textColor="@color/text_title"
+            android:textSize="17dp" />
+
+        <ImageView
+            style="@style/wrap_All"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/wuzhen_vipnextpage" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_pchixia"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/zhongyaohuiyi" />
+
+</LinearLayout>

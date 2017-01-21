@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/genbuju"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beijing"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+        <ImageView
+            android:id="@+id/image_jiudianweizhi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/wuzhen_banner" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/linearlayout_jiudianxinxi"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_jiudianxinxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:ellipsize="end"
+                android:text=""
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/text_jiudianname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textSize="15dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/linearlayout_jiudianxinxi"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_jiudianweizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:ellipsize="end"
+                android:text=""
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/text_jiudianlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:textSize="15dp"
+                android:maxLines="3"
+                android:text=""
+                android:textColor="@color/white"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_fangjiandingwei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/linearlayout_jiudianxinxi"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_fangjianweizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:ellipsize="end"
+                android:textSize="15dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/text_viproom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="8"
+                android:textSize="15dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text=""
+                android:textColor="@color/white"
+                android:typeface="sans" />
+
+            <ImageButton
+                android:id="@+id/imagebutton_dingwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/wuzhen_hotelinfomation" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

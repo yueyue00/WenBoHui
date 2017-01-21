@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill_All"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv"
+        style="@style/wrap_All"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

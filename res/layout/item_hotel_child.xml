@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beijing"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        style="@style/wrap_width"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:textColor="@color/common_red_font"
+        android:textSize="@dimen/content_font_size" >
+
+        <TextView
+            android:id="@+id/text_jiudianname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp"
+            android:text="jiudianname"
+            android:textColor="@color/text_details"
+            android:textSize="16dp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/text_jiudianlocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp"
+            android:text="jiudianlocation"
+            android:textColor="@color/text_details"
+            android:textSize="16dp"
+            android:typeface="sans" />
+
+        <View
+            android:id="@+id/item_jiudian_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/beijing" />
+    </LinearLayout>
+
+</RelativeLayout>

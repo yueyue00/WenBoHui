@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F8F8F8" >
+
+        <Button
+            android:id="@+id/goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/text_title"
+            android:textSize="18sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/titletv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_title"
+            android:textSize="18sp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlelayout"
+        android:background="#E8E8E8" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/userphotobig"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/usernamelayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/userphotobig"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/nametv"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/usernametv"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/nametv"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text="PAUL JACOBS"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#BBBBBB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/usersexlayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/usernamelayout" >
+
+                <TextView
+                    android:id="@+id/sextv"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/usersextv"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/sextv"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text="男"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#BBBBBB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userguojilayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/usersexlayout" >
+
+                <TextView
+                    android:id="@+id/guojitv"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/userguojitv"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/guojitv"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text="美国"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#BBBBBB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userzongjiaolayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/userguojilayout" >
+
+                <TextView
+                    android:id="@+id/zongjiaotv"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/userzongjiaotv"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/zongjiaotv"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text="无"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#BBBBBB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userlevellayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/userzongjiaolayout" >
+
+                <TextView
+                    android:id="@+id/leveltv"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/userleveltv"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/leveltv"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text="一级"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#BBBBBB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userzhiweilayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/userlevellayout" >
+
+                <TextView
+                    android:id="@+id/zhiweitv"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/userzhiwei"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/zhiweitv"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text="美国高通公司执行董事长"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#BBBBBB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userfangjianlayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/userzhiweilayout" >
+
+                <TextView
+                    android:id="@+id/fangjiantv"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/userfangjiantv"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/fangjiantv"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text="枕水酒店 3-301房间"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/jiudianlocationbutton"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#BBBBBB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/usersuixingrenyuanlayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/userfangjianlayout" >
+
+                <TextView
+                    android:id="@+id/suixingrenyuantv"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/usersuixingrenyuantv"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/suixingrenyuantv"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text="Paul(秘书)"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/suixingrenyuanphonecallbutton"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#BBBBBB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/usergerenjieshaolayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usersuixingrenyuanlayout" >
+
+                <TextView
+                    android:id="@+id/gerenjieshaotv"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/usergerenjieshaotv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/gerenjieshaotv"
+                    android:gravity="left|center_vertical"
+                    android:text="美国高通公司执行董事长美国高通公司执行董事长美国高通公司执行董事长美国高通公司执行董事长美国高通公司执行董事长美国高通公司执行董事长"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

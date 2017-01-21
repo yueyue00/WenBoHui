@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout style="@style/fill_All" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_huichang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/huichangzhinan_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/nodatafounddate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂无数据"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/content_font_size_big"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+</LinearLayout>

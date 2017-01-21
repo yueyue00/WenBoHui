@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+    
+ <com.gheng.exhibit.widget.CustomGridView 
+    android:id="@+id/mytask_customgridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:scrollbars="none"
+    ></com.gheng.exhibit.widget.CustomGridView> 
+    <!-- <HorizontalScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+	
+	<ListView
+	    android:id="@+id/mytask_customgridView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none" >
+	</ListView>
+
+</HorizontalScrollView> -->
+</LinearLayout>

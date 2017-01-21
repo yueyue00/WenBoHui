@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gheng.exhibit.widget.ZScrollview xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/huiyixiangqing_pop_shape" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/huiyixiangqing_popwitem_marginTop"
+            android:layout_marginLeft="@dimen/huiyixiangqing_popwitem_marginLeft"
+            android:layout_marginRight="@dimen/huiyixiangqing_popwitem_marginLeft"
+            android:layout_marginTop="@dimen/huiyixiangqing_popwitem_marginTop" >
+
+            <View
+                android:id="@+id/icon_yitiname"
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/tv_yitiname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon_yitiname"
+                android:text="议题名称：" />
+
+            <TextView
+                android:id="@+id/yitiname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_yitiname"
+                android:text="会议会议会议会议议会议会议会议会议会议会议会议会议会议"
+                android:textColor="@color/text_details" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/huiyixiangqing_popwitem_marginTop"
+            android:layout_marginLeft="@dimen/huiyixiangqing_popwitem_marginLeft"
+            android:layout_marginRight="@dimen/huiyixiangqing_popwitem_marginLeft"
+            android:layout_marginTop="@dimen/huiyixiangqing_popwitem_marginTop"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/tv_yititime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="议题时间：" />
+
+            <TextView
+                android:id="@+id/yititime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="2015"
+                android:textColor="@color/text_details" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/huiyixiangqing_popwitem_marginLeft"
+            android:layout_marginRight="@dimen/huiyixiangqing_popwitem_marginLeft"
+            android:layout_marginTop="@dimen/huiyixiangqing_popwitem_marginTop"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/tv_talkman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主持人：" />
+
+            <TextView
+                android:id="@+id/yiti_talkman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="梁丽华"
+                android:textColor="@color/text_details" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/huiyixiangqing_popwitem_marginTop"
+            android:layout_marginLeft="@dimen/huiyixiangqing_popwitem_marginLeft"
+            android:layout_marginRight="@dimen/huiyixiangqing_popwitem_marginLeft"
+            android:layout_marginTop="@dimen/huiyixiangqing_popwitem_marginTop"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="-10dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/tv_guest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="-10dp"
+                android:singleLine="true"
+                android:text="议题嘉宾：" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_yitijiabin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/huiyixiangqing_popw_jiabin"
+                android:layout_marginLeft="10dp" >
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/huiyixiangqing_popwitem_marginTop"
+            android:layout_marginLeft="@dimen/huiyixiangqing_popwitem_marginLeft"
+            android:layout_marginRight="@dimen/huiyixiangqing_popwitem_marginLeft"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/tv_yiticontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="议题内容：" />
+
+            <TextView
+                android:id="@+id/yiticontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+                android:textColor="@color/text_details" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.gheng.exhibit.widget.ZScrollview>

@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+     >
+<!-- <LinearLayout
+        android:id="@+id/vipinfo_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:background="@color/xiaoguo_title2_bg" 
+        android:orientation="vertical"
+        >
+       
+       <View 
+           android:id="@+id/vipinfo_view"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            ></View>
+       
+        <RelativeLayout
+            android:id="@+id/vipinfo_titlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            
+             >
+
+            <ImageButton
+                android:id="@+id/vipinfo_goback"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:paddingRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/wuzhen_back" 
+                 android:layout_marginTop="@dimen/title_margin_top"
+                />
+
+            <TextView
+                android:id="@+id/vipinfo_titletv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="19dp"
+                 android:layout_marginTop="@dimen/title_margin_top"
+                 />
+        </RelativeLayout>
+    </LinearLayout> -->
+    <include 
+    layout="@layout/title" />
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="@color/vip_base"
+       >
+       
+ 
+   
+   <RadioGroup 
+       android:id="@+id/vipinfp_rg"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       
+       >
+       <RadioButton 
+           android:id="@+id/vip_rb_baseInfo"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:text="基本信息"
+           android:button="@null"
+           android:gravity="center"
+           android:textColor="#ffffff"
+           android:background="@drawable/vip_rb_selector"
+           />
+      
+     
+       <RadioButton 
+           android:id="@+id/vip_rb_schdule"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:text="嘉宾日程"
+           android:button="@null"
+           android:gravity="center"
+           android:textColor="#ffffff"
+           android:background="@drawable/vip_rb_right_selector"
+           />
+   </RadioGroup>
+     </LinearLayout>
+    <android.support.v4.view.ViewPager
+         android:id="@+id/vipinfo_viewpager"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         
+         >
+         
+     </android.support.v4.view.ViewPager>
+</LinearLayout>

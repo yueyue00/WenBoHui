@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill_All"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/wrap_All"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/text_title"
+        android:textSize="20sp"
+        android:typeface="sans" />
+
+</LinearLayout>

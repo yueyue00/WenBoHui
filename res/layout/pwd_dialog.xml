@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/wrap_All"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="PCHi@ReedSinopharm.com"
+        android:textColor="@color/white"
+        android:textSize="@dimen/content_font_size_middle"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:textColor="@color/text_title"
+        android:typeface="sans" />
+
+</LinearLayout>

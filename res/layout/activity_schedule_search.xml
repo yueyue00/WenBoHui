@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftImageSrc="@drawable/back"
+        titleBar:leftLineShow="false"
+        titleBar:text=""
+        titleBar:textSize="@dimen/title_font_size" >
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/common_red_font"
+            android:textSize="@dimen/content_font_size" />
+    </com.gheng.exhibit.widget.TitleBar>
+
+    <LinearLayout
+        style="@style/fill_All"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/wrap_width"
+            android:background="@color/app_backgroud"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/edt_name"
+                style="@style/wrap_width"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/schedule_search_date"
+                android:drawableLeft="@drawable/search_btn"
+                android:drawablePadding="5dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:textSize="@dimen/content_font_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_backgroud"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_date_label"
+                style="@style/wrap_All"
+                android:layout_marginLeft="15dp"
+                android:textSize="@dimen/content_font_size_big" />
+
+            <LinearLayout
+                android:id="@+id/checkBoxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <CheckBox style="@style/ScheduleSearchCheckBox" />
+
+                <CheckBox style="@style/ScheduleSearchCheckBox" />
+
+                <CheckBox style="@style/ScheduleSearchCheckBox" />
+
+                <CheckBox style="@style/ScheduleSearchCheckBox" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/barContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/app_backgroud"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/content_font_size_big" />
+
+            <RelativeLayout
+                style="@style/wrap_width"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/common_red_font"
+                    android:textSize="@dimen/content_font_size_big" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/common_red_font"
+                    android:textSize="@dimen/content_font_size_big" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/type_layout"
+            style="@style/wrap_width"
+            android:layout_marginTop="10dp"
+            android:background="@color/app_backgroud"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/ScheduleSearchType" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2000"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/schedule_intro_logo"
+                        android:layout_height="@dimen/schedule_intro_logo"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/sync" />
+
+                    <TextView
+                        android:id="@+id/tv_sync"
+                        style="@style/wrap_All"
+                        android:layout_marginLeft="@dimen/schedule_intro_margin"
+                        android:textSize="@dimen/content_font_size_middle" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/wrap_All"
+                    android:layout_gravity="right|center_vertical"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="@dimen/switch_max_height"
+                    android:src="@drawable/vote_submit_normal" />
+            </LinearLayout>
+
+            <include layout="@layout/view_bar_line" />
+
+            <LinearLayout style="@style/ScheduleSearchType" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2000"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/schedule_intro_logo"
+                        android:layout_height="@dimen/schedule_intro_logo"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/close" />
+
+                    <TextView
+                        android:id="@+id/tv_close"
+                        style="@style/wrap_All"
+                        android:layout_marginLeft="@dimen/schedule_intro_margin"
+                        android:textSize="@dimen/content_font_size_middle" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/wrap_All"
+                    android:layout_gravity="right|center_vertical"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="@dimen/switch_max_height"
+                    android:src="@drawable/vote_submit_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

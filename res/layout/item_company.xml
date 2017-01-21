@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/item_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/company_list_logo_size"
+        android:layout_height="@dimen/company_list_logo_size"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        style="@style/wrap_All"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/right" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@id/arrow"
+        android:layout_toRightOf="@id/iv" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/wrap_All"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/main_schedule_font"
+            android:textSize="@dimen/content_font_size_big"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            style="@style/wrap_All"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_exhibit"
+                style="@style/wrap_All"
+                android:text=""
+                android:textColor="@color/company_stand"
+                android:textSize="@dimen/content_font_size_big"
+                android:typeface="sans" />
+
+            <TextView
+                style="@style/wrap_All"
+                android:text=":  "
+                android:textColor="@color/company_stand"
+                android:textSize="@dimen/content_font_size"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/tv_exhibit_number"
+                style="@style/wrap_All"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/company_stand"
+                android:textSize="@dimen/content_font_size"
+                android:typeface="sans" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_fav"
+            android:layout_width="@dimen/fav_icon"
+            android:layout_height="@dimen/fav_icon"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/fav" />
+
+        <TextView
+            android:id="@+id/tv_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/content_font_size_middle"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</RelativeLayout>

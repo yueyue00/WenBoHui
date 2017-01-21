@@ -1,0 +1,48 @@
+<resources>
+
+    <!--
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).    -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="title_icon_size">32dp</dimen>
+    <dimen name="title_font_size">20dp</dimen>
+    <dimen name="title_height">60dp</dimen>
+    <dimen name="title_padding">15dp</dimen>
+    <dimen name="small">19dp</dimen>
+    <dimen name="content_font_size_middle">20dp</dimen>
+    <dimen name="content_font_size">21dp</dimen>
+    <dimen name="content_font_size_big">20dp</dimen>
+    <dimen name="content_font_size_big_2">24dp</dimen>
+    <dimen name="content_font_size_big_3">26dp</dimen>
+    <dimen name="width">45dp</dimen>
+    <dimen name="height">45dp</dimen>
+    <dimen name="icon_width">45dp</dimen>
+    <dimen name="icon_height">45dp</dimen>
+    <dimen name="mtype_info_padding">5dp</dimen>
+    <dimen name="margin">20dp</dimen>
+    <dimen name="common_list_padding">10dp</dimen>
+    <dimen name="common_list_paddingp">15dp</dimen>
+    <dimen name="list_item_img_size">60dp</dimen>
+    <dimen name="tab_corner_radius">5dp</dimen>
+    <dimen name="main_corner">10dp</dimen>
+    <dimen name="pchi_image_height">450dp</dimen>
+    <dimen name="pchi_item_height">80dp</dimen>
+    <dimen name="pchi_list_icon_size">40dp</dimen>
+    <dimen name="company_list_logo_size">120dp</dimen>
+    <dimen name="company_info_logo_size">180dp</dimen>
+    <dimen name="search_height">40dp</dimen>
+    <dimen name="company_list_tab_height">60dp</dimen>
+    <dimen name="company_corner">8dp</dimen>
+    <dimen name="search_edt_coners">20dp</dimen>
+    <dimen name="angle_width">15dp</dimen>
+    <dimen name="angle_height">23dp</dimen>
+    <dimen name="circle_size">23dp</dimen>
+    <dimen name="nation_list_icon_size">90dp</dimen>
+    <dimen name="nation_item_height">120dp</dimen>
+    <dimen name="switch_max_height">45dp</dimen>
+    <dimen name="main_bottom_height">75dp</dimen>
+    <dimen name="main_hand_height">45dp</dimen>
+    <dimen name="schedule_list_logo_size">90dp</dimen>
+
+</resources>

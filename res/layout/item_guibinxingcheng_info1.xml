@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beijing"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        style="@style/wrap_width"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:textColor="@color/common_red_font"
+        android:textSize="@dimen/content_font_size" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/text_dahuitype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxWidth="@dimen/guibinxingcheng_item_three"
+                android:text="dahuitype"
+                android:textColor="@color/text_details"
+                android:textSize="16dp"
+                android:typeface="sans" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/zhongyaohuiyi" />
+
+            <TextView
+                android:id="@+id/text_dahuitime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxWidth="@dimen/guibinxingcheng_item_two"
+                android:text="dahuitime"
+                android:textColor="@color/text_details"
+                android:textSize="16dp"
+                android:typeface="sans" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/zhongyaohuiyi" />
+
+            <TextView
+                android:id="@+id/text_dahuiplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxWidth="@dimen/guibinxingcheng_item_three"
+                android:text="dahuiplace"
+                android:textColor="@color/text_details"
+                android:textSize="16dp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_dahuimingcheng"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp"
+            android:text="dahuimingcheng"
+            android:textColor="@color/text_details"
+            android:textSize="16dp"
+            android:typeface="sans" />
+
+        <RelativeLayout
+            android:id="@+id/radio_guibindaohang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/radio_guibindaohangz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/wuzhen_hotelinfomation"
+                android:button="@null"
+                android:textColor="@color/red_dh"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_dahuidescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/textview"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="请凭邀请函前往参会"
+                android:textColor="@color/text_details"
+                android:textSize="16dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/radio_guibindaohangz"
+                android:text="位置"
+                android:textColor="@color/zhujiangren"
+                android:textSize="15dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/item_guibingxingcheng_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/beijing" />
+    </LinearLayout>
+
+</RelativeLayout>

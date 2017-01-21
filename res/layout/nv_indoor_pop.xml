@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/nav_popup_bg" >
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/pop_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding"
+                android:singleLine="true"
+                android:text="导航"
+                android:textColor="@color/company_stand"
+                android:textSize="15dp"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/info"
+            android:background="@color/text_details" />
+
+        <LinearLayout
+            android:id="@+id/rl_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/line"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/view_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="设为起点"
+                android:textColor="@color/text_details"
+                android:textSize="14dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/nav_line"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/text_details" />
+
+            <TextView
+                android:id="@+id/nav_route"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="设为终点"
+                android:textColor="@color/text_details"
+                android:textSize="14dp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/titlelayout"
+        layout="@layout/title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/myscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlelayout"
+        android:fadeScrollbars="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linear_iv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/huiyixiangqing_top"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/tv_xiaoguo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_iv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-18dp"
+                android:background="@drawable/wuzhen_pchidetails_kuang"
+                android:fadeScrollbars="true" >
+
+                <RelativeLayout
+                    android:id="@+id/rv_xiaoguo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/pchi_details_iv"
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:src="@drawable/wuzhen_pchidetails_point" />
+
+                        <TextView
+                            android:id="@+id/pchi_details_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:gravity="left|center_vertical"
+                            android:text=""
+                            android:textColor="@color/text_title"
+                            android:textSize="16dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/pchi_details_meettingtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="left|center_vertical"
+                            android:text="Loading..."
+                            android:textColor="@color/text_details"
+                            android:textSize="16dp"
+                            android:typeface="sans" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/linearLayout1"
+                        android:layout_marginTop="15dp" >
+
+                        <ImageView
+                            android:id="@+id/pchi_details_point0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="7dp"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/pchi_details_pchitime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/pchi_details_point0"
+                            android:gravity="left|center_vertical"
+                            android:text=""
+                            android:textColor="@color/text_title"
+                            android:textSize="16dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/pchi_details_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/pchi_details_pchitime"
+                            android:gravity="left|center_vertical"
+                            android:text="Loading..."
+                            android:textColor="@color/text_details"
+                            android:textSize="16dp"
+                            android:typeface="sans" />
+
+                        <RelativeLayout
+                            android:id="@+id/relative_pchi_details_adressdetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pchi_details_pchitime"
+                            android:layout_toRightOf="@+id/pchi_details_point0"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/pchi_details_adress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="left|center_vertical"
+                                android:text=""
+                                android:textColor="@color/text_title"
+                                android:textSize="16dp"
+                                android:typeface="sans" />
+
+                            <ImageView
+                                android:id="@+id/imagebutton_dingwei"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/wuzhen_hotelinfomation" />
+
+                            <TextView
+                                android:id="@+id/daohangtv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_toLeftOf="@+id/imagebutton_dingwei"
+                                android:gravity="center"
+                                android:lines="1"
+                                android:text="导航"
+                                android:textColor="@color/zhujiangren"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/pchi_details_adressdetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_toLeftOf="@+id/daohangtv"
+                                android:layout_toRightOf="@+id/pchi_details_adress"
+                                android:gravity="left|center_vertical"
+                                android:text="Loading..."
+                                android:textColor="@color/text_details"
+                                android:textSize="16dp"
+                                android:typeface="sans" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativelayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/relativeLayout0"
+                        android:layout_marginTop="8dp" >
+
+                        <ImageView
+                            android:id="@+id/pchi_details_point"
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/wuzhen_pchidetails_point" />
+
+                        <TextView
+                            android:id="@+id/pchi_details_zhujiangren"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/pchi_details_point"
+                            android:gravity="left|center_vertical"
+                            android:text=""
+                            android:textColor="@color/text_title"
+                            android:textSize="16dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/pchi_details_zhujiangrenname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/pchi_details_zhujiangren"
+                            android:gravity="left|center_vertical"
+                            android:text="Loading..."
+                            android:textColor="@color/text_details"
+                            android:textSize="16dp"
+                            android:typeface="sans" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativelayout1"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp" >
+
+                        <ImageView
+                            android:id="@+id/pchi_details_point2"
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/wuzhen_pchidetails_point" />
+
+                        <TextView
+                            android:id="@+id/pchi_details_jianjie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:gravity="top"
+                            android:text=""
+                            android:textColor="@color/text_title"
+                            android:textSize="16dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/pchi_details_jianjiedetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="left|center_vertical"
+                            android:text="Loading..."
+                            android:textColor="@color/text_details"
+                            android:textSize="16dp"
+                            android:typeface="sans" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv_xiaoguo2"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tv_xiaoguo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_xiaoguo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-18dp"
+                android:background="@drawable/wuzhen_pchidetails_kuang"
+                android:fadeScrollbars="true"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rv_xiaoguo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/pchi_details_yiti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:gravity="left|center_vertical"
+                        android:text=""
+                        android:textColor="@color/text_title"
+                        android:textSize="16dp"
+                        android:typeface="sans" />
+
+                    <com.hebg3.mxy.utils.NsTextView
+                        android:id="@+id/pchi_details_yitineirong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@+id/pchi_details_yiti"
+                        android:gravity="left|center_vertical"
+                        android:text="Loading..."
+                        android:textColor="@color/text_details"
+                        android:textSize="16dp"
+                        android:typeface="sans" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/indoor_map"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.gheng.exhibit.widget.TitleBar
+            xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/titleBar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/title"
+            android:paddingLeft="@dimen/title_padding"
+            android:paddingRight="@dimen/title_padding"
+            titleBar:leftImageSrc="@drawable/back"
+            titleBar:leftLineShow="false"
+            titleBar:rightLineShow="false"
+            titleBar:textSize="@dimen/title_font_size" >
+        </com.gheng.exhibit.widget.TitleBar>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1000" >
+
+            <com.gheng.indoormap.MapView
+                android:id="@+id/mapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <RelativeLayout
+                android:id="@+id/search_layout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="240dip"
+                android:layout_marginRight="3dip"
+                android:background="@drawable/nav_btn_background" >
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:src="@drawable/search" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/routing_layout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="200dip"
+                android:layout_marginRight="3dip"
+                android:background="@drawable/nav_btn_background" >
+
+                <ImageView
+                    android:id="@+id/routing_btn"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:src="@drawable/routing" />
+            </RelativeLayout>
+			<RelativeLayout
+                android:id="@+id/info_layout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="280dip"
+                android:layout_marginRight="3dip"
+                android:background="@drawable/nav_btn_background" >
+
+                <ImageView
+                    android:id="@+id/info_btn"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:src="@drawable/ask_mark" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/location_layout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="120dip"
+                android:layout_marginRight="3dip"
+                android:background="@drawable/nav_btn_background" >
+
+                <ImageView
+                    android:id="@+id/location_btn"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:src="@drawable/nav_location" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/nav_loc_center"
+                android:visibility="gone" />
+            <!-- 清除按钮 -->
+            <RelativeLayout
+                android:id="@+id/clean_layout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="160dip"
+                android:layout_marginRight="3dip"
+                android:background="@drawable/nav_btn_background" >
+
+                <Button
+                    android:id="@+id/clear_btn"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/nav_map_clear"
+                    android:gravity="center|center_horizontal|center_vertical" />
+            </RelativeLayout>
+
+            <!-- 导航路线规划视图区域 -->
+            <RelativeLayout
+                android:id="@+id/more_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/nav_background"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/change_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/nav_list"
+                    android:text="GO" />
+
+                <RelativeLayout
+                    android:id="@+id/nav_rly1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/change_btn" >
+
+                    <Button
+                        android:id="@+id/startEt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/nav_list"
+                        android:hint=""
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="35dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/startNav"
+                        style="@style/wrap_All"
+                        android:layout_alignLeft="@id/startEt"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/nav_icon_start" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nav_rly2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nav_rly1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/change_btn" >
+
+                    <Button
+                        android:id="@+id/endEt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/nav_list"
+                        android:hint="请点选终点"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="35dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/endNav"
+                        style="@style/wrap_All"
+                        android:layout_alignLeft="@id/endEt"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/nav_icon_end" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- 路线规划视图区域结束 -->
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

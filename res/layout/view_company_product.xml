@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/lv"
+        layout="@layout/pull_listview" />
+
+    <TextView
+        android:id="@+id/tv_not_found"
+        style="@style/fill_All"
+        android:gravity="center"
+        android:textColor="@color/text_title"
+        android:textSize="@dimen/content_font_size_big"
+        android:typeface="sans" />
+
+</RelativeLayout>

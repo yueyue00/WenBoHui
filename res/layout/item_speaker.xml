@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/common_list_padding"
+    android:paddingLeft="5dp"
+    android:paddingTop="@dimen/common_list_padding" >
+
+    <com.gheng.exhibit.widget.RoundImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/company_list_logo_size"
+        android:layout_height="@dimen/company_list_logo_size"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        style="@style/wrap_All"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@id/arrow"
+        android:layout_toRightOf="@id/iv"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/wrap_All"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/content_font_size_big"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tv_office"
+            style="@style/wrap_All"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/main_icon_font"
+            android:textSize="@dimen/content_font_size_middle"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tv_workplace"
+            style="@style/wrap_All"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/main_icon_font"
+            android:textSize="@dimen/content_font_size_middle"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</RelativeLayout>

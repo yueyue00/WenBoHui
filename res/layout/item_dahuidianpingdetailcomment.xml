@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/uploaduserphoto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a_huiyiricheng_guesticon" />
+
+    <TextView
+        android:id="@+id/uploadusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/uploaduserphoto"
+        android:lines="1"
+        android:text="loading"
+        android:textColor="@color/blue"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/uploadtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/uploaduserphoto"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/uploaduserphoto"
+        android:lines="1"
+        android:text="2010-01-01 10:10:10"
+        android:textColor="#686868"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/commentsright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/uploadtime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/nocommentslogo"
+        android:drawablePadding="5dp"
+        android:lines="1"
+        android:textColor="#686868"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploadtime"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/uploaduserphoto"
+        android:text="这么多牛人的Boss,不错的盛会"
+        android:textColor="#1a1a1a"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/uploaduserphoto"
+        android:background="#DCDCDC" />
+
+</RelativeLayout>

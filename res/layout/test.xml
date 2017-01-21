@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="250dp"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:gravity="left|bottom"
+                android:text="语言选择/Language"
+                android:textColor="@color/text_title"
+                android:textSize="16sp"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/languagechoselayout"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/title" >
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent" >
+
+                <TextView
+                    android:id="@+id/tw"
+                    android:layout_width="75dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="top|center_horizontal"
+                    android:lines="1"
+                    android:text="繁體中文"
+                    android:textColor="@color/text_title"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent" >
+
+                <TextView
+                    android:id="@+id/english"
+                    android:layout_width="75dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="top|center_horizontal"
+                    android:lines="1"
+                    android:text="English"
+                    android:textColor="@color/text_title"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

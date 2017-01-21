@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_margin="50dp">
+   
+    <RelativeLayout
+        android:id="@+id/rl_dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/mytask_shape_pressed">
+        <TextView
+            android:id="@+id/dialog_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_content"   
+            android:layout_marginTop="50dp"    
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_tips"
+            />       
+           
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            >
+            
+           <LinearLayout 
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center">
+            <Button  
+                 android:id="@+id/dialog_ok"
+                 android:layout_width="wrap_content"
+           	 	 android:layout_height="wrap_content"
+                 android:background="@drawable/dialog_ok_seletor"
+                 />
+            </LinearLayout>
+             <LinearLayout 
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center">
+            <Button
+                 android:id="@+id/dialog_cancel"
+                 android:layout_width="wrap_content"
+            	 android:layout_height="wrap_content"
+                 android:background="@drawable/dialog_cancle_selector"/>
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+ 
+</RelativeLayout>
+    

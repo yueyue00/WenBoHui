@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+   <!--  <LinearLayout
+        android:id="@+id/vil_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:background="@color/xiaoguo_title2_bg"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/vil_view"
+            android:layout_width="match_parent"
+            android:layout_height="15dp" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/vil_titlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/vil_goback"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/title_margin_top"
+                android:background="@android:color/transparent"
+                android:paddingRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/wuzhen_back" />
+
+            <TextView
+                android:id="@+id/vil_titletv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/title_margin_top"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="19dp" />
+        </RelativeLayout>
+    </LinearLayout> -->
+<include 
+    android:id="@+id/vil_title_layout"
+    layout="@layout/title" />
+  
+
+    <LinearLayout
+        android:id="@+id/linear_search_vipinfolist"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/vil_title_layout"
+        android:background="@color/xiaoguo_title2_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/wuzhen_huiyiricheng_searchkuang"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/search_btn" />
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vil_title_layout"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:hint="请输入嘉宾名称"
+                android:singleLine="true"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.gheng.exhibit.widget.PinnedHeaderListView
+        android:id="@+id/vil_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/linear_search_vipinfolist"
+        android:layout_marginRight="30dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+         />
+
+    <ListView
+        android:id="@+id/search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_search_vipinfolist"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/vil_searchEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_search_vipinfolist"
+        android:gravity="center"
+        android:text="查询数据为空"
+        android:textColor="@color/xiaoguo_title2_bg"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.gheng.exhibit.widget.BladeView
+        android:id="@+id/friends_myletterlistview"
+        android:layout_width="30dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linear_search_vipinfolist"
+        android:background="@color/transparent" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_margin="5dp"
+    android:id="@+id/driver_task_container_ll"
+    >
+    <!-- <ImageView 
+        android:id="@+id/driver_task_ivIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/icon"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+<TextView 
+    android:id="@+id/driver_task_tvName"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:text="成龙成龙"
+    android:gravity="center"
+    android:layout_marginLeft="7dp"
+    android:textColor="#aaaaaa"
+    />
+<TextView 
+    android:id="@+id/driver_task_tvJob"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="副局长"
+    android:gravity="center"
+    android:layout_marginLeft="7dp"
+    android:textColor="#aaaaaa"
+    />
+<ImageView 
+        android:id="@+id/driver_task_ivCall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/driver_call_icon"
+        android:layout_marginLeft="7dp"
+        />
+<TextView 
+    android:id="@+id/driver_task_tvPhoneNum"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:text="18634578903"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:textColor="#aaaaaa"
+    />
+<CheckBox 
+    android:id="@+id/driver_task_checkbox"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:focusableInTouchMode="false"
+      android:button="@null"
+      android:background="@drawable/mytask_checkbox_selector"
+      android:layout_gravity="right|center_vertical"
+      android:layout_marginRight="10dp"
+    /> -->
+</LinearLayout>

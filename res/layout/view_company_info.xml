@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill_All" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_remark"
+                style="@style/fill_All"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/content_font_size"
+                android:typeface="sans" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_not_found_info"
+        style="@style/fill_All"
+        android:gravity="center"
+        android:textSize="@dimen/content_font_size_big" />
+
+</FrameLayout>

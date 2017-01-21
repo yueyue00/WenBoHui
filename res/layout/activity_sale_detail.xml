@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gheng.exhibit.widget.TitleBar
+        xmlns:titleBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        titleBar:leftLineShow="false"
+        titleBar:text="@string/company_search"
+        titleBar:textSize="@dimen/title_font_size" />
+    <!-- titleBar:leftImageSrc="@drawable/back" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_font_size" />
+
+            <EditText
+                android:id="@+id/edt_company_shortname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|left"
+                android:inputType="textPhonetic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_enname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="企业名称(英):"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_font_size" />
+
+            <EditText
+                android:id="@+id/edt_company_enshortname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|left"
+                android:hint="Please enter a business name"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/red_selector"
+            android:gravity="center"
+            android:text="提   交"
+            android:textColor="@drawable/selector_font"
+            android:textSize="@dimen/content_font_size" />
+    </LinearLayout>
+
+</LinearLayout>
